@@ -1,11 +1,16 @@
+import { FiAlignJustify } from "react-icons/fi";
 
 const Navbar = () => {
     const navLinks = <>
-        <li><a>Item 1</a></li>
-        <li><a>Item 3</a></li>
+        <li className="font-semibold"><a>HOME</a></li>
+        <li className="font-semibold"><a>ABOUT</a></li>
+        <li className="font-semibold"><a>MY PROJECTS</a></li>
+        <li className="font-semibold"><a>SKILLS</a></li>
+        <li className="font-semibold"><a>DESIGNS</a></li>
+        <li className="font-semibold"><a>CONTACT</a></li>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar w-full bg-gray-500 bg-opacity-20 fixed z-30 text-cyan-300">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,10 +28,12 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <button className="btn btn-accent btn-outline border-cyan-300 border-2">
+                    <FiAlignJustify className="text-xl text-cyan-300"></FiAlignJustify>
+                </button>
             </div>
         </div>
     );
 };
 
-export default Navbar;
+export default Navbar; 
