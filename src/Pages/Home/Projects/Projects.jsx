@@ -48,16 +48,26 @@ const Projects = () => {
         }
     };
 
+    const handleResetScroll = (containerRef) => () => {
+        clearInterval(scrollIntervalToTop);
+        if (containerRef.current) {
+            containerRef.current.scrollTop = 0;
+        }
+    };
+
     return (
         <div>
+            <h2 className='text-5xl font-extrabold text-center text-cyan-400 mb-5'>MY PROJECTS</h2>
+            <p className='text-center text-xl font-semibold text-cyan-100 mb-20'>I have developed a series of dynamic web applications leveraging the MERN stack, showcasing <br /> my proficiency in MongoDB, Express.js, React, and Node.js. Using technologies like <br /> Tailwind CSS for sleek designs, Axios for efficient API requests, and Tanstack Query for seamless data management, <br /> these projects exhibit my expertise in modern web development practices.</p>
             <div className='flex gap-16 justify-center flex-row-reverse'>
                 <div className='flex flex-col items-center'>
                     <div
-                        className="w-96 h-96 border border-gray-300 relative overflow-hidden"
+                        className="w-96 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
                         data-aos="fade-up"
                         style={{ overflow: 'hidden' }}
                         onMouseEnter={handleMouseEnter(containerRef1)}
                         onMouseLeave={handleMouseLeave(containerRef1)}
+                        onClick={handleResetScroll(containerRef1)}
                         ref={containerRef1}
                     >
                         <img
@@ -82,11 +92,12 @@ const Projects = () => {
 
                 <div className='flex flex-col items-center'>
                     <div
-                        className="w-96 h-96 border border-gray-300 relative overflow-hidden"
+                        className="w-96 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
                         data-aos="fade-up"
                         style={{ overflow: 'hidden' }}
                         onMouseEnter={handleMouseEnter(containerRef2)}
                         onMouseLeave={handleMouseLeave(containerRef2)}
+                        onClick={handleResetScroll(containerRef2)}
                         ref={containerRef2}
                     >
                         <img
@@ -111,11 +122,12 @@ const Projects = () => {
 
                 <div className='flex flex-col items-center'>
                     <div
-                        className="w-96 h-96 border border-gray-300 relative overflow-hidden"
+                        className="w-96 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
                         data-aos="fade-up"
                         style={{ overflow: 'hidden' }}
                         onMouseEnter={handleMouseEnter(containerRef3)}
                         onMouseLeave={handleMouseLeave(containerRef3)}
+                        onClick={handleResetScroll(containerRef3)}
                         ref={containerRef3}
                     >
                         <img
