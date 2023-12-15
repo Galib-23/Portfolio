@@ -4,6 +4,7 @@ import Banner from "../Banner/Banner";
 import Designs from "../Designs/Designs";
 import Featured from "../Featured/Featured";
 import Projects from "../Projects/Projects";
+import Timeline from "../Timeline/Timeline";
 import UiDesign from "../UI/UiDesign";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
             <Designs></Designs>
             <UiDesign></UiDesign>
             <Featured></Featured>
+            <Timeline></Timeline>
         </div>
     );
 };

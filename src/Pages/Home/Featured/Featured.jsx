@@ -10,7 +10,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
-import { FaGithub, FaLink, FaPlay } from 'react-icons/fa';
+import { FaGithub, FaPlay } from 'react-icons/fa';
 
 const Featured = () => {
     return (
@@ -22,13 +22,13 @@ const Featured = () => {
                     <div className=' border-y-4 py-4 border-cyan-400 w-1/2'>
                     <img className='w-60 rounded-3xl' src={play} alt="" />
                     </div>
-                    <a href="https://play.google.com/store/apps/details?id=com.aasadullahg.edumingle&pcampaignid=web_share"><button className='btn btn-outline text-green-600 btn-lg mt-5'>LIVE APP ON GOOGLE PLAY<FaPlay></FaPlay></button></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.aasadullahg.edumingle&pcampaignid=web_share" target="_blank" rel="noopener noreferrer"><button className='btn btn-outline text-green-600 btn-lg mt-5'>LIVE APP ON GOOGLE PLAY<FaPlay></FaPlay></button></a>
                     <p className='text-xl mt-4 text-white'>
-                    As a part-time Flutter developer, I specialize in crafting <br /> mobile applications using <a href='https://dart.dev/' className='text-blue-500'>Dart</a> and the <a href='https://flutter.dev/' className='text-blue-500'>Flutter</a> framework. <br /> With a keen eye for detail and a passion for mobile <br /> app development, I leverage <br /> Flutters robust capabilities to create <br /> visually stunning, cross-platform applications.
+                    <span className='text-cyan-400 font-semibold'>EDU MINGLE</span>, a user-friendly mobile application <br /> designed to help students and parents find <br /> nearby qualified tutors quickly and <br /> easily. Whether you need help with math, <br /> science, language, or any other subject, Edu <br /> Mingle connects you with local tutors <br /> who can provide the assistance you need.
                     </p>
-                    <a href=""><button className='btn btn-outline text-cyan-300 mt-5'>GITHUB LINK<FaGithub></FaGithub></button></a>
+                    <a href="https://github.com/Galib-23/tutor-finder-app" target="_blank" rel="noopener noreferrer"><button className='btn btn-outline text-cyan-300 mt-5'>GITHUB LINK<FaGithub></FaGithub></button></a>
                 </div>
-                <div className='w-[850px]'>
+                <div className='w-[850px] border-2 rounded-3xl'>
                     <Swiper
                         effect={'coverflow'}
                         grabCursor={true}
@@ -43,8 +43,8 @@ const Featured = () => {
                         }}
                         pagination={true}
                         autoplay={{
-                            delay: 3000, // Set delay in milliseconds
-                            disableOnInteraction: false, // Continue autoplay even after user interaction
+                            delay: 3000,
+                            disableOnInteraction: false, 
                         }}
                         modules={[EffectCoverflow, Pagination]}
                         className="mySwiper"
