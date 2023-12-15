@@ -6,8 +6,9 @@ import 'react-vertical-timeline-component/style.min.css';
 const Timeline = () => {
     return (
         <div className="mt-32">
+            <h2 className='text-5xl font-extrabold text-cyan-400 text-center mb-16'>MY JOURNEY</h2>
             <div>
-                <VerticalTimeline>
+                <VerticalTimeline className='font-bold'>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -23,49 +24,49 @@ const Timeline = () => {
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
+                        className="vertical-timeline-element--work text-white"
                         date="2022 - Present"
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                         icon={<FaSuitcase/>}
                     >
-                        <h3 className="vertical-timeline-element-title">Teacher</h3>
-                        <h4 className="vertical-timeline-element-subtitle">MOJARU</h4>
-                        <p>
+                        <h3 className="vertical-timeline-element-title text-black">Teacher</h3>
+                        <h4 className="vertical-timeline-element-subtitle text-black">MOJARU</h4>
+                        <p className='text-black'>
                             Teaching Math in an online based coaching center named Mojaru.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
+                        className="vertical-timeline-element--work text-white"
                         date="2020"
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                         icon={<FaSchool />}
                     >
-                        <h3 className="vertical-timeline-element-title">Passed Out HSC</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Rajshahi Cadet College</h4>
-                        <p>
+                        <h3 className="vertical-timeline-element-title text-black">Passed Out HSC</h3>
+                        <h4 className="vertical-timeline-element-subtitle text-black">Rajshahi Cadet College</h4>
+                        <p className='text-black'>
                             Result: GPA 5.00
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
+                        className="vertical-timeline-element--work text-white"
                         date="2018"
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                         icon={<FaBook/>}
                     >
-                        <h3 className="vertical-timeline-element-title">Passed SSC</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Rajshahi Cadet College</h4>
-                        <p>
+                        <h3 className="vertical-timeline-element-title text-black">Passed SSC</h3>
+                        <h4 className="vertical-timeline-element-subtitle text-black">Rajshahi Cadet College</h4>
+                        <p className='text-black'>
                             Result GPA 5.00
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date=""
+                        className="vertical-timeline-element--education text-white"
+                        date="2014 - 2020"
                         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                         icon={<FaSchool/>}
                     >
-                        <h3 className="vertical-timeline-element-title">Rajshahi Cadet College</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Rajshahi, Bangladesh</h4>
+                        <h3 className="vertical-timeline-element-title text-black">Rajshahi Cadet College</h3>
+                        <h4 className="vertical-timeline-element-subtitle text-black">Rajshahi, Bangladesh</h4>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
