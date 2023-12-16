@@ -55,10 +55,15 @@ const Projects = () => {
         }
     };
 
+
+
     return (
-        <div>
-            <h2 className='text-5xl font-extrabold text-center text-cyan-400 mb-5'>MY PROJECTS</h2>
-            <p className='text-center text-xl font-semibold text-cyan-100 mb-20'>I have developed a series of dynamic web applications leveraging the MERN stack, showcasing <br /> my proficiency in MongoDB, Express.js, React, and Node.js. Using technologies like <br /> Tailwind CSS for sleek designs, Axios for efficient API requests, and Tanstack Query for seamless data management, <br /> these projects exhibit my expertise in modern web development practices.</p>
+        <div id='projects'>
+            <div data-aos="fade-up"
+                data-aos-duration="3000">
+                <h2 className='text-4xl font-extrabold text-center text-cyan-400 mb-5'>MY PROJECTS</h2>
+                <p className='text-center font-semibold text-cyan-100 mb-20'>I have developed a series of dynamic web applications leveraging the MERN stack, showcasing <br /> my proficiency in MongoDB, Express.js, React, and Node.js. Using technologies like <br /> Tailwind CSS for sleek designs, Axios for efficient API requests, and Tanstack Query for seamless data management, <br /> these projects exhibit my expertise in modern web development practices.</p>
+            </div>
             <div className='flex gap-16 justify-center flex-row-reverse'>
                 <div className='flex flex-col items-center'>
                     <div
@@ -77,15 +82,16 @@ const Projects = () => {
                             style={{ transition: 'transform 0.3s ease-in-out' }}
                         />
                     </div>
-                    <div className='flex gap-2'>
+                    <div className='flex gap-2' data-aos="fade-up"
+                        data-aos-duration="3000">
                         <a href=""><button className="btn btn-outline mt-7 text-yellow-400">
                             LIVE LINK <FaLink></FaLink>
                         </button></a>
                         <a href=''><button className="btn btn-outline mt-7 text-red-800">
-                            CLIENT SIDE <FaGithub></FaGithub>
+                            FRONTEND <FaGithub></FaGithub>
                         </button></a>
                         <a href=""><button className="btn btn-outline mt-7 text-cyan-500">
-                            SERVER SIDE <FaGithub></FaGithub>
+                            BACKEND <FaGithub></FaGithub>
                         </button></a>
                     </div>
                 </div>
@@ -107,15 +113,16 @@ const Projects = () => {
                             style={{ transition: 'transform 0.3s ease-in-out' }}
                         />
                     </div>
-                    <div className='flex gap-2'>
+                    <div className='flex gap-2' data-aos="fade-up"
+                        data-aos-duration="3000">
                         <a href=""><button className="btn btn-outline mt-7 text-yellow-400">
                             LIVE LINK <FaLink></FaLink>
                         </button></a>
                         <a href=''><button className="btn btn-outline mt-7 text-red-800">
-                            CLIENT SIDE <FaGithub></FaGithub>
+                            FRONTEND <FaGithub></FaGithub>
                         </button></a>
                         <a href=""><button className="btn btn-outline mt-7 text-cyan-500">
-                            SERVER SIDE <FaGithub></FaGithub>
+                            BACKEND <FaGithub></FaGithub>
                         </button></a>
                     </div>
                 </div>
@@ -137,15 +144,15 @@ const Projects = () => {
                             style={{ transition: 'transform 0.3s ease-in-out' }}
                         />
                     </div>
-                    <div className='flex gap-2'>
+                    <div className='flex gap-2' data-aos="fade-up">
                         <a href=""><button className="btn btn-outline mt-7 text-yellow-400">
                             LIVE LINK <FaLink></FaLink>
                         </button></a>
                         <a href=''><button className="btn btn-outline mt-7 text-red-800">
-                            CLIENT SIDE <FaGithub></FaGithub>
+                            FRONTEND <FaGithub></FaGithub>
                         </button></a>
                         <a href=""><button className="btn btn-outline mt-7 text-cyan-500">
-                            SERVER SIDE <FaGithub></FaGithub>
+                            BACKEND <FaGithub></FaGithub>
                         </button></a>
                     </div>
                 </div>

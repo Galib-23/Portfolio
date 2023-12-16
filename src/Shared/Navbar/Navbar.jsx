@@ -1,16 +1,19 @@
 import { FiAlignJustify } from "react-icons/fi";
+import glogo from '../../assets/glogo.png';
+import profile from '../../assets/edit2.jpeg';
+import {Link} from 'react-scroll';
 
 const Navbar = () => {
     const navLinks = <>
-        <li className="font-semibold"><a>HOME</a></li>
-        <li className="font-semibold"><a>ABOUT</a></li>
-        <li className="font-semibold"><a>MY PROJECTS</a></li>
-        <li className="font-semibold"><a>SKILLS</a></li>
-        <li className="font-semibold"><a>DESIGNS</a></li>
-        <li className="font-semibold"><a>CONTACT</a></li>
+        <li className="font-semibold active:border-b-2"><Link to="banner" spy={true} smooth={true} duration={500}>HOME</Link></li>
+        <li className="font-semibold active:border-b-2"><Link to="about" spy={true} smooth={true} duration={500}>ABOUT</Link></li>
+        <li className="font-semibold active:border-b-2"><Link to="projects" spy={true} smooth={true} duration={500}>MY PROJECTS</Link></li>
+        <li className="font-semibold active:border-b-2"><Link to="design" spy={true} smooth={true} duration={500}>DESIGNS</Link></li>
+        <li className="font-semibold active:border-b-2"><Link to="skills" spy={true} smooth={true} duration={500}>SKILLS</Link></li>
+        <li className="font-semibold active:border-b-2"><Link to="contact" spy={true} smooth={true} duration={500}>CONTACT</Link></li>
     </>
     return (
-        <div className="navbar w-full bg-gray-500 bg-opacity-20 fixed z-30 text-cyan-300">
+        <div className="navbar w-full bg-gray-500 bg-opacity-40 fixed z-30 text-cyan-300">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -20,7 +23,10 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <div className="flex items-center">
+                    <img className="w-14" src={glogo} alt="" />
+                    <h2 className="text-lg font-semibold">ASADULLAH AL GALIB</h2>
+                </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -28,9 +34,25 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="btn btn-accent btn-outline border-cyan-300 border-2">
-                    <FiAlignJustify className="text-xl text-cyan-300"></FiAlignJustify>
-                </button>
+                <details className="dropdown dropdown-left dropdown-bottom">
+                    <summary className="btn btn-accent btn-outline border-cyan-300 border-2"><FiAlignJustify className="text-xl text-cyan-300"></FiAlignJustify></summary>
+                    <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-60">
+                        <div className="flex flex-col items-center text-black">
+                            <div className="avatar">
+                                <div className="w-24 rounded-full">
+                                    <img src={profile} />
+                                </div>
+                            </div>
+                            <h2 className="text-lg">Asadullah Al Galib</h2>
+                            <h3 className="">Full Stack Web Developer</h3>
+                            <p>Rajshahi, Bangladesh</p>
+                            <h2 className="text-lg font-bold mt-4">Contact Info:</h2>
+                            <p>Email: aagalib2323@gmail.com</p>
+                            <p>Phone: +8801772967677</p>
+                            <p className="mt-2">Thanks for visiting</p>
+                        </div>
+                    </ul>
+                </details>
             </div>
         </div>
     );

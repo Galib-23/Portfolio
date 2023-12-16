@@ -12,23 +12,32 @@ import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { FaGithub, FaPlay } from 'react-icons/fa';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const Featured = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, [])
+
     return (
-        <div className='mt-36'>
-            <h2 className='text-6xl font-extrabold text-cyan-400 text-center mb-4'>MY APPS</h2>
-            <p className='text-xl font-semibold text-white text-center mb-16'>Proficient in Flutter and Dart, alongside a foundational understanding <br /> of Java, I bring a versatile skill set to mobile app development. <br /> As an experienced Flutter enthusiast, I excel in creating dynamic, cross-platform applications that prioritize <br /> both functionality and design.</p>
-            <div className='flex justify-evenly items-center'>
+        <div id='featured' className='mt-36'>
+            <div data-aos="fade-down">
+            <h2 className='text-4xl font-extrabold text-cyan-400 text-center mb-4'>MY APPS</h2>
+            <p className='text-white text-center mb-16'>Proficient in Flutter and Dart, alongside a foundational understanding <br /> of Java, I bring a versatile skill set to mobile app development. <br /> As an experienced Flutter enthusiast, I excel in creating dynamic, cross-platform applications that prioritize <br /> both functionality and design.</p>
+            </div>
+            <div data-aos="fade-down-right" className='flex justify-evenly items-center'>
                 <div>
-                    <div className=' border-y-4 py-4 border-cyan-400 w-1/2'>
-                    <img className='w-60 rounded-3xl' src={play} alt="" />
-                    </div>
-                    <a href="https://play.google.com/store/apps/details?id=com.aasadullahg.edumingle&pcampaignid=web_share" target="_blank" rel="noopener noreferrer"><button className='btn btn-outline text-green-600 btn-lg mt-5'>LIVE APP ON GOOGLE PLAY<FaPlay></FaPlay></button></a>
+                    <img className='w-40 rounded-3xl' src={play} alt="" />
+                    <a href="https://play.google.com/store/apps/details?id=com.aasadullahg.edumingle&pcampaignid=web_share" target="_blank" rel="noopener noreferrer"><button className='btn btn-outline text-green-600 mt-5'>LIVE ON GOOGLE PLAY<FaPlay></FaPlay></button></a>
                     <p className='text-xl mt-4 text-white'>
-                    <span className='text-cyan-400 font-semibold'>EDU MINGLE</span>, a user-friendly mobile application <br /> designed to help students and parents find <br /> nearby qualified tutors quickly and <br /> easily. Whether you need help with math, <br /> science, language, or any other subject, Edu <br /> Mingle connects you with local tutors <br /> who can provide the assistance you need.
+                    <span className='text-cyan-400'>EDU MINGLE</span>, a user-friendly mobile application <br /> designed to help students and parents find <br /> nearby qualified tutors quickly and <br /> easily.
                     </p>
-                    <a href="https://github.com/Galib-23/tutor-finder-app" target="_blank" rel="noopener noreferrer"><button className='btn btn-outline text-cyan-300 mt-5'>GITHUB LINK<FaGithub></FaGithub></button></a>
+                    <a href="https://github.com/Galib-23/tutor-finder-app" target="_blank" rel="noopener noreferrer"><button className='btn btn-sm btn-outline text-cyan-300 mt-5'>GITHUB LINK<FaGithub></FaGithub></button></a>
                 </div>
-                <div className='w-[850px] border-2 rounded-3xl'>
+                <div data-aos="fade-down-left" className='w-[550px] border-2 rounded-3xl'>
                     <Swiper
                         effect={'coverflow'}
                         grabCursor={true}

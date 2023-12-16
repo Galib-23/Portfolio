@@ -1,6 +1,8 @@
+import Footer from "../../../Shared/Footer/Footer";
 import Navbar from "../../../Shared/Navbar/Navbar";
 import About from "../About/About";
 import Banner from "../Banner/Banner";
+import { ContactUs } from "../ContactUs/ContactUs";
 import Designs from "../Designs/Designs";
 import Featured from "../Featured/Featured";
 import Projects from "../Projects/Projects";
@@ -20,6 +22,8 @@ const Home = () => {
             <Featured></Featured>
             <Timeline></Timeline>
             <Skills></Skills>
+            <ContactUs></ContactUs>
+            <Footer></Footer>
         </div>
     );
 };

@@ -5,7 +5,12 @@ import { motion } from "framer-motion";
 import { IoMdDownload } from "react-icons/io";
 import { IoPlayCircleSharp } from "react-icons/io5";
 import Tilt from 'react-parallax-tilt';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const Banner = () => {
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, [])
     const words = ['Developer', 'Coder', 'Designer'];
     const [index, setIndex] = useState(0);
     useEffect(() => {
@@ -16,10 +21,10 @@ const Banner = () => {
         return () => clearInterval(interval);
     }, [words.length]);
     return (
-        <div className="relative">
+        <div id='banner' className="relative">
             {/* Content inside the section */}
             <div className="absolute inset-0 z-10 flex items-center justify-evenly md:container mx-auto">
-                <div className='w-1/2'>
+                <div  data-aos="flip-left" className='w-1/2'>
                     <h2 className="text-5xl text-white font-extrabold uppercase">Hi, I am Galib!</h2>
                     <h2 className="text-5xl text-white font-extrabold uppercase">
                         Dynamic{' '}
@@ -44,7 +49,7 @@ const Banner = () => {
                         </button>
                     </div>
                 </div>
-                <div className="avatar">
+                <div  data-aos="flip-right" className="avatar">
                     <div className="w-[400px] rounded-3xl border-b-8 border-t-8 p-3 border-cyan-600">
                         <Tilt>
                         <img className='rounded-3xl' src={profile} />
