@@ -64,10 +64,10 @@ const Projects = () => {
                 <h2 className='text-4xl font-extrabold text-center text-cyan-400 mb-5'>MY PROJECTS</h2>
                 <p className='text-center font-semibold text-cyan-100 mb-20'>I have developed a series of dynamic web applications leveraging the MERN stack, showcasing <br /> my proficiency in MongoDB, Express.js, React, and Node.js. Using technologies like <br /> Tailwind CSS for sleek designs, Axios for efficient API requests, and Tanstack Query for seamless data management, <br /> these projects exhibit my expertise in modern web development practices.</p>
             </div>
-            <div className='flex gap-16 justify-center flex-row-reverse'>
+            <div className='flex gap-16 justify-center flex-col md:flex-row-reverse'>
                 <div className='flex flex-col items-center'>
                     <div
-                        className="w-96 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+                        className="md:w-96 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
                         data-aos="fade-up"
                         style={{ overflow: 'hidden' }}
                         onMouseEnter={handleMouseEnter(containerRef1)}
@@ -98,7 +98,7 @@ const Projects = () => {
 
                 <div className='flex flex-col items-center'>
                     <div
-                        className="w-96 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+                        className="md:w-96 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
                         data-aos="fade-up"
                         style={{ overflow: 'hidden' }}
                         onMouseEnter={handleMouseEnter(containerRef2)}
@@ -129,7 +129,7 @@ const Projects = () => {
 
                 <div className='flex flex-col items-center'>
                     <div
-                        className="w-96 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+                        className="md:w-96 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
                         data-aos="fade-up"
                         style={{ overflow: 'hidden' }}
                         onMouseEnter={handleMouseEnter(containerRef3)}

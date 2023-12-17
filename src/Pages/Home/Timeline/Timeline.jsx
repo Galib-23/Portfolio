@@ -12,7 +12,7 @@ const Timeline = () => {
     return (
         <div className="mt-32">
             <h2 data-aos="fade-up" className='text-4xl font-extrabold text-cyan-400 text-center mb-16'>MY JOURNEY</h2>
-            <div>
+            <div className='mx-2'>
                 <VerticalTimeline className='font-bold'>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"

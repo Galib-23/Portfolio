@@ -12,11 +12,11 @@ const Designs = () => {
         <div id='design' className='mt-40'>
             <h2 data-aos="fade-up" className='text-4xl font-extrabold text-cyan-400 text-center mb-4'>VECTOR ARTS</h2>
             <p data-aos="fade-up" className='text text-white text-center mb-16'>Whether crafting intricate illustrations using Inkspace <br /> versatile tools or meticulously editing videos to convey compelling narratives, my dedication to the <br /> craft ensures each project is a seamless blend of artistry and precision.</p>
-            <div className='flex justify-evenly items-center'>
-                <div data-aos="fade-left" className=''>
-                    <img className='w-[500px]' src={collage} alt="" />
+            <div className='flex flex-col-reverse md:flex-row justify-evenly items-center'>
+                <div data-aos="fade-left" className='flex flex-col items-center mt-6 md:mt-0'>
+                    <img className='w-3/4 md:w-[500px] mx-4 md:mx-0' src={collage} alt="" />
                 </div>
-                <div data-aos="fade-right">
+                <div data-aos="fade-right" className='flex flex-col items-center md:items-start text-center md:text-right'>
                     <img className='w-44' src={paint} alt="" />
                     <h2 className='mt-6 text-4xl font-extrabold text-cyan-400'>MY GRAPHICS DESIGNS</h2>
                     <p className='text mt-2 text-white'>

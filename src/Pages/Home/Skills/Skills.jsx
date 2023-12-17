@@ -11,7 +11,7 @@ const Skills = () => {
             <div data-aos="fade-up" className="flex justify-center mb-24">
             <hr className="w-1/5"/>
             </div>
-            <div className="flex justify-evenly">
+            <div className="flex justify-evenly gap-8 md:gap-0 flex-col md:flex-row items-center">
                 <div data-aos="fade-right" className="flex flex-col items-center">
                     <h2 className="text-2xl text-center font-bold mb-6 text-cyan-400">FRONTEND</h2>
                     <div className="grid grid-cols-2 gap-6">

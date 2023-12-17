@@ -13,7 +13,7 @@ const Navbar = () => {
         <li className="font-semibold active:border-b-2"><Link to="contact" spy={true} smooth={true} duration={500}>CONTACT</Link></li>
     </>
     return (
-        <div className="navbar w-full bg-gray-500 bg-opacity-40 fixed z-30 text-cyan-300">
+        <div className="navbar w-full bg-gray-500 bg-opacity-40 md:fixed md:z-30 text-cyan-300">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,8 +24,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex items-center">
-                    <img className="w-14" src={glogo} alt="" />
-                    <h2 className="text-lg font-semibold">ASADULLAH AL GALIB</h2>
+                    <img className="w-11" src={glogo} alt="" />
+                    <h2 className="hidden md:flex text-lg font-semibold">ASADULLAH AL GALIB</h2>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">

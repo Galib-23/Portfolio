@@ -28,16 +28,16 @@ const Featured = () => {
             <h2 className='text-4xl font-extrabold text-cyan-400 text-center mb-4'>MY APPS</h2>
             <p className='text-white text-center mb-16'>Proficient in Flutter and Dart, alongside a foundational understanding <br /> of Java, I bring a versatile skill set to mobile app development. <br /> As an experienced Flutter enthusiast, I excel in creating dynamic, cross-platform applications that prioritize <br /> both functionality and design.</p>
             </div>
-            <div data-aos="fade-down-right" className='flex justify-evenly items-center'>
-                <div>
+            <div data-aos="fade-down-right" className='flex justify-evenly items-center flex-col md:flex-row'>
+                <div className='flex flex-col items-center md:items-start'>
                     <img className='w-40 rounded-3xl' src={play} alt="" />
                     <a href="https://play.google.com/store/apps/details?id=com.aasadullahg.edumingle&pcampaignid=web_share" target="_blank" rel="noopener noreferrer"><button className='btn btn-outline text-green-600 mt-5'>LIVE ON GOOGLE PLAY<FaPlay></FaPlay></button></a>
-                    <p className='text-xl mt-4 text-white'>
+                    <p className='text-xl mt-4 text-white text-center md:text-right'>
                     <span className='text-cyan-400'>EDU MINGLE</span>, a user-friendly mobile application <br /> designed to help students and parents find <br /> nearby qualified tutors quickly and <br /> easily.
                     </p>
                     <a href="https://github.com/Galib-23/tutor-finder-app" target="_blank" rel="noopener noreferrer"><button className='btn btn-sm btn-outline text-cyan-300 mt-5'>GITHUB LINK<FaGithub></FaGithub></button></a>
                 </div>
-                <div data-aos="fade-down-left" className='w-[550px] border-2 rounded-3xl'>
+                <div data-aos="fade-down-left" className='w-[400px] md:w-[550px] mt-7 md:mt-0 rounded-3xl'>
                     <Swiper
                         effect={'coverflow'}
                         grabCursor={true}

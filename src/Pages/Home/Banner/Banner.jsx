@@ -10,7 +10,17 @@ import 'aos/dist/aos.css';
 const Banner = () => {
     useEffect(() => {
         Aos.init({ duration: 2000 });
-    }, [])
+    }, []);
+
+    const googleDrivePDFLink = 'https://drive.google.com/uc?export=download&id=1LL3heVW-ABMJcinDdRaWQmQbqlLnEsLW';
+    const handleDownload = () => {
+        const directDownloadLink = googleDrivePDFLink.replace('open', 'uc');
+        const downloadAnchor = document.createElement('a');
+        downloadAnchor.href = directDownloadLink;
+        downloadAnchor.download = 'task2.pdf';
+        downloadAnchor.click();
+    };
+
     const words = ['Developer', 'Coder', 'Designer'];
     const [index, setIndex] = useState(0);
     useEffect(() => {
@@ -23,10 +33,10 @@ const Banner = () => {
     return (
         <div id='banner' className="relative">
             {/* Content inside the section */}
-            <div className="absolute inset-0 z-10 flex items-center justify-evenly md:container mx-auto">
-                <div  data-aos="flip-left" className='w-1/2'>
-                    <h2 className="text-5xl text-white font-extrabold uppercase">Hi, I am Galib!</h2>
-                    <h2 className="text-5xl text-white font-extrabold uppercase">
+            <div className="absolute inset-0 z-10 flex flex-col-reverse md:flex-row items-center justify-evenly md:container mx-auto mt-5 md:mt-0">
+                <div data-aos="flip-left" className='w-1/2'>
+                    <h2 className="text-center md:text-left text-lg md:text-3xl lg:text-5xl text-white font-extrabold uppercase">Hi, I am Galib!</h2>
+                    <h2 className="text-center md:text-left text-2xl md:text-3xl lg:text-5xl text-white font-extrabold uppercase">
                         Dynamic{' '}
                         <motion.span
                             className='text-cyan-400'
@@ -39,31 +49,32 @@ const Banner = () => {
                             {words[index]}
                         </motion.span>
                     </h2>
-                    <p className='text-white mt-5 text-lg'>With a strong foundation in MongoDB, Express.js, React.js, and Node.js, I thrive on building robust, scalable, and efficient web applications that bring ideas to life. Whether it is creating interactive user interfaces or architecting seamless backend systems, I love the challenge of turning concepts into reality through code.</p>
-                    <div className='flex gap-4'>
-                        <button className="btn btn-accent btn-outline mt-6">DOWNLOAD CV
+                    <p className='text-center md:text-left text-white mt-5 text-lg'>With a strong foundation in MongoDB, Express.js, React.js, and Node.js, I thrive on building robust, scalable, and efficient web applications that bring ideas to life. <span className='hidden md:flex'>Whether it is creating interactive user interfaces or architecting seamless backend systems, I love the challenge of turning concepts into reality through code.</span></p>
+                    <div className='flex flex-col md:flex-row items-center md:items-start gap-4'>
+                        <button onClick={handleDownload} className="btn btn-accent btn-outline mt-6 mb-10 md:mb-0">DOWNLOAD CV
                             <IoMdDownload className='text-xl' />
                         </button>
-                        <button className="btn btn-secondary btn-outline mt-6">WATCH VIDEO
-                            <IoPlayCircleSharp className='text-xl' />
-                        </button>
+                        <a href="https://youtu.be/ENrzD9HAZK4?feature=shared"  target="_blank" rel="noopener noreferrer">
+                            <button className="btn btn-secondary btn-outline mt-6 hidden md:flex">WATCH VIDEO
+                                <IoPlayCircleSharp className='text-xl' />
+                            </button>
+                        </a>
                     </div>
                 </div>
-                <div  data-aos="flip-right" className="avatar">
-                    <div className="w-[400px] rounded-3xl border-b-8 border-t-8 p-3 border-cyan-600">
+                <div data-aos="flip-right" className="avatar">
+                    <div className="w-48 mt-10 mb-6 md:mb-0 md:mt-0 md:w-[400px] rounded-3xl border-b-8 border-t-8 p-3 border-cyan-600">
                         <Tilt>
-                        <img className='rounded-3xl' src={profile} />
+                            <img className='rounded-3xl' src={profile} />
                         </Tilt>
                     </div>
                 </div>
             </div>
-
-            {/* Background image with reduced opacity */}
+            
             <div
-                className="relative min-h-screen bg-cover bg-center"
+                className="md:relative min-h-screen bg-cover bg-center"
                 style={{
                     backgroundImage: `url(${banner})`,
-                    backgroundColor: 'rgba(0, 0, 0, 0.3)', // 0.3 opacity for the background
+                    backgroundColor: 'rgba(0, 0, 0, 0.3)',
                 }}
             />
         </div>
