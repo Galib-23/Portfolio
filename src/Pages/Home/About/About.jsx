@@ -55,7 +55,7 @@ const About = () => {
                     <h2 className="text-xl text-white font-bold mt-5 uppercase">
                         BUILDING DIGITAL MARVELS<br /> WITH MERN SORCERY
                     </h2>
-                    <p className='text-white mt-5 text-lg'> As a creative problem-solver, I combine my<br />technical expertise  with a keen eye for design <br />to develop visually stunning, user-friendly websites.<br /><span className='hidden md:flex'> My goal is not just functionality but also <br /> to ensure that each project I work on delivers<br /> an engaging  and intuitive user experience.</span></p>
+                    <p className='text-white mt-5 text-lg'> As a creative problem-solver, I combine my<br />technical expertise  with a keen eye for design <br />to develop visually stunning, user-friendly websites.<br /><span className='hidden md:block'> My goal is not just functionality but also <br /> to ensure that each project I work on delivers<br /> an engaging  and intuitive user experience.</span></p>
                 </div>
             </div>
 

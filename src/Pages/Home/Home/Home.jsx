@@ -12,7 +12,7 @@ import UiDesign from "../UI/UiDesign";
 
 const Home = () => {
     return (
-        <div className="bg-black">
+        <div className="bg-black overflow-x-hidden">
             <Navbar></Navbar>
             <Banner></Banner>
             <About></About>

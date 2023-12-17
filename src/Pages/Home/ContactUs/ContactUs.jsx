@@ -24,7 +24,7 @@ export const ContactUs = () => {
         <div className='mt-28' id='contact'>
             <h2 data-aos="fade-left"  data-aos-duration="2000" className='text-4xl font-bold text-cyan-400 text-center mb-4'>CONNECT WITH ME</h2>
             <div className='flex justify-center'>
-                <div className='w-1/3'>
+                <div className='w-full md:w-1/3 mx-8'>
                     <form ref={form} onSubmit={sendEmail}>
                         <label data-aos="fade-right" data-aos-duration="2000" className="form-control w-full">
                             <div className="label">

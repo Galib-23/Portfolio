@@ -15,9 +15,9 @@ const UiDesign = () => {
             <h2 className='text-4xl font-extrabold text-cyan-400 text-center mb-4'>UI DESIGNS</h2>
             <p className='text-white text-center mb-16'>As a part-time UI designer specializing in mobile app interfaces, <br /> I wield the Inkscape software to craft sleek and user-centric <br />vector UI designs. With a passion for creating seamless and visually appealing experiences, <br /> I meticulously design interfaces that seamlessly merge functionality with aesthetics.</p>
             </div>
-            <div className='flex flex-col md:flex-row items-center  justify-center gap-20'>
-                <img data-aos="fade-up-right" className='w-60 rounded-3xl' src={app1} alt="" />
-                <img data-aos="fade-up-left" className='w-60 rounded-3xl' src={app2} alt="" />
+            <div className='flex flex-col md:flex-row items-center  justify-center gap-7 md:gap-20'>
+                <img data-aos="fade-up-right" className='w-40 md:w-60 rounded-3xl' src={app1} alt="" />
+                <img data-aos="fade-up-left" className='w-40 md:w-60 rounded-3xl' src={app2} alt="" />
             </div>
         </div>
     );

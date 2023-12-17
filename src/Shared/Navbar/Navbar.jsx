@@ -5,12 +5,14 @@ import {Link} from 'react-scroll';
 
 const Navbar = () => {
     const navLinks = <>
-        <li className="font-semibold active:border-b-2"><Link to="banner" spy={true} smooth={true} duration={500}>HOME</Link></li>
-        <li className="font-semibold active:border-b-2"><Link to="about" spy={true} smooth={true} duration={500}>ABOUT</Link></li>
-        <li className="font-semibold active:border-b-2"><Link to="projects" spy={true} smooth={true} duration={500}>MY PROJECTS</Link></li>
-        <li className="font-semibold active:border-b-2"><Link to="design" spy={true} smooth={true} duration={500}>DESIGNS</Link></li>
-        <li className="font-semibold active:border-b-2"><Link to="skills" spy={true} smooth={true} duration={500}>SKILLS</Link></li>
-        <li className="font-semibold active:border-b-2"><Link to="contact" spy={true} smooth={true} duration={500}>CONTACT</Link></li>
+        <li className="active:border-b-2"><Link to="banner" spy={true} smooth={true} duration={500}>HOME</Link></li>
+        <li className="active:border-b-2"><Link to="about" spy={true} smooth={true} duration={500}>ABOUT</Link></li>
+        <li className="active:border-b-2"><Link to="projects" spy={true} smooth={true} duration={500}>MY PROJECTS</Link></li>
+        <li className="active:border-b-2"><Link to="design" spy={true} smooth={true} duration={500}>DESIGNS</Link></li>
+        <li className="active:border-b-2"><Link to="featured" spy={true} smooth={true} duration={500}>FEATURED</Link></li>
+        <li className="active:border-b-2"><Link to="education" spy={true} smooth={true} duration={500}>EDUCATION</Link></li>
+        <li className="active:border-b-2"><Link to="skills" spy={true} smooth={true} duration={500}>SKILLS</Link></li>
+        <li className="active:border-b-2"><Link to="contact" spy={true} smooth={true} duration={500}>CONTACT</Link></li>
     </>
     return (
         <div className="navbar w-full bg-gray-500 bg-opacity-40 md:fixed md:z-30 text-cyan-300">
@@ -34,7 +36,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <details className="dropdown dropdown-left dropdown-bottom">
+                <details className="dropdown dropdown-left dropdown-bottom z-50">
                     <summary className="btn btn-accent btn-outline border-cyan-300 border-2"><FiAlignJustify className="text-xl text-cyan-300"></FiAlignJustify></summary>
                     <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-60">
                         <div className="flex flex-col items-center text-black">
@@ -45,11 +47,14 @@ const Navbar = () => {
                             </div>
                             <h2 className="text-lg">Asadullah Al Galib</h2>
                             <h3 className="">Full Stack Web Developer</h3>
-                            <p>Rajshahi, Bangladesh</p>
                             <h2 className="text-lg font-bold mt-4">Contact Info:</h2>
                             <p>Email: aagalib2323@gmail.com</p>
                             <p>Phone: +8801772967677</p>
                             <p className="mt-2">Thanks for visiting</p>
+                            <h2 className="text-lg font-bold mt-4">Address:</h2>
+                            <p>Paba, Katakhali, Rajshahi</p>
+                            <p>Post Code: 6211</p>
+                            <p>BANGLADESH</p>
                         </div>
                     </ul>
                 </details>

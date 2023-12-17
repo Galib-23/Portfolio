@@ -32,7 +32,7 @@ const Featured = () => {
                 <div className='flex flex-col items-center md:items-start'>
                     <img className='w-40 rounded-3xl' src={play} alt="" />
                     <a href="https://play.google.com/store/apps/details?id=com.aasadullahg.edumingle&pcampaignid=web_share" target="_blank" rel="noopener noreferrer"><button className='btn btn-outline text-green-600 mt-5'>LIVE ON GOOGLE PLAY<FaPlay></FaPlay></button></a>
-                    <p className='text-xl mt-4 text-white text-center md:text-right'>
+                    <p className='text-xl mt-4 text-white text-center md:text-left'>
                     <span className='text-cyan-400'>EDU MINGLE</span>, a user-friendly mobile application <br /> designed to help students and parents find <br /> nearby qualified tutors quickly and <br /> easily.
                     </p>
                     <a href="https://github.com/Galib-23/tutor-finder-app" target="_blank" rel="noopener noreferrer"><button className='btn btn-sm btn-outline text-cyan-300 mt-5'>GITHUB LINK<FaGithub></FaGithub></button></a>

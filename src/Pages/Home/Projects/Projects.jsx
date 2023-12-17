@@ -58,7 +58,7 @@ const Projects = () => {
 
 
     return (
-        <div id='projects'>
+        <div id='projects' className='mt-20'>
             <div data-aos="fade-up"
                 data-aos-duration="3000">
                 <h2 className='text-4xl font-extrabold text-center text-cyan-400 mb-5'>MY PROJECTS</h2>
@@ -82,7 +82,7 @@ const Projects = () => {
                             style={{ transition: 'transform 0.3s ease-in-out' }}
                         />
                     </div>
-                    <div className='flex gap-2' data-aos="fade-up"
+                    <div className='flex gap-2 mx-2 md:mx-0' data-aos="fade-up"
                         data-aos-duration="3000">
                         <a href=""><button className="btn btn-outline mt-7 text-yellow-400">
                             LIVE LINK <FaLink></FaLink>
@@ -113,7 +113,7 @@ const Projects = () => {
                             style={{ transition: 'transform 0.3s ease-in-out' }}
                         />
                     </div>
-                    <div className='flex gap-2' data-aos="fade-up"
+                    <div className='flex gap-2 mx-2 md:mx-0' data-aos="fade-up"
                         data-aos-duration="3000">
                         <a href=""><button className="btn btn-outline mt-7 text-yellow-400">
                             LIVE LINK <FaLink></FaLink>
@@ -144,7 +144,7 @@ const Projects = () => {
                             style={{ transition: 'transform 0.3s ease-in-out' }}
                         />
                     </div>
-                    <div className='flex gap-2' data-aos="fade-up">
+                    <div className='flex gap-2 mx-2 md:mx-0' data-aos="fade-up">
                         <a href=""><button className="btn btn-outline mt-7 text-yellow-400">
                             LIVE LINK <FaLink></FaLink>
                         </button></a>

@@ -33,7 +33,7 @@ const Banner = () => {
     return (
         <div id='banner' className="relative">
             {/* Content inside the section */}
-            <div className="absolute inset-0 z-10 flex flex-col-reverse md:flex-row items-center justify-evenly md:container mx-auto mt-5 md:mt-0">
+            <div className="absolute inset-0 z-10 flex flex-col-reverse md:flex-row items-center justify-evenly md:container mx-auto mt-14 md:mt-0">
                 <div data-aos="flip-left" className='w-1/2'>
                     <h2 className="text-center md:text-left text-lg md:text-3xl lg:text-5xl text-white font-extrabold uppercase">Hi, I am Galib!</h2>
                     <h2 className="text-center md:text-left text-2xl md:text-3xl lg:text-5xl text-white font-extrabold uppercase">
@@ -50,7 +50,7 @@ const Banner = () => {
                         </motion.span>
                     </h2>
                     <p className='text-center md:text-left text-white mt-5 text-lg'>With a strong foundation in MongoDB, Express.js, React.js, and Node.js, I thrive on building robust, scalable, and efficient web applications that bring ideas to life. <span className='hidden md:flex'>Whether it is creating interactive user interfaces or architecting seamless backend systems, I love the challenge of turning concepts into reality through code.</span></p>
-                    <div className='flex flex-col md:flex-row items-center md:items-start gap-4'>
+                    <div className='flex flex-col md:flex-row mb-10 md:mb-0 items-center md:items-start gap-4'>
                         <button onClick={handleDownload} className="btn btn-accent btn-outline mt-6 mb-10 md:mb-0">DOWNLOAD CV
                             <IoMdDownload className='text-xl' />
                         </button>
