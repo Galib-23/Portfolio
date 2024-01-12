@@ -12,7 +12,8 @@ const Banner = () => {
         Aos.init({ duration: 2000 });
     }, []);
 
-    const googleDrivePDFLink = 'https://drive.google.com/uc?export=download&id=1LL3heVW-ABMJcinDdRaWQmQbqlLnEsLW';
+    //https://drive.google.com/file/d/1nESC9sA3vCql0HoKwxsVlymvBvw_Nd7r/view?usp=sharing
+    const googleDrivePDFLink = 'https://drive.google.com/uc?export=download&id=1nESC9sA3vCql0HoKwxsVlymvBvw_Nd7r';
     const handleDownload = () => {
         const directDownloadLink = googleDrivePDFLink.replace('open', 'uc');
         const downloadAnchor = document.createElement('a');

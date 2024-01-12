@@ -19,32 +19,32 @@ const About = () => {
                     <h2 className='text-3xl text-white font-extrabold mb-7'>SOCIAL LINKS</h2>
                     <div className='grid grid-cols-2 md:grid-cols-3 gap-2'>
                         <a href="https://web.facebook.com/profile.php?id=100076476525666" target="_blank" rel="noopener noreferrer">
-                            <button className="btn btn-outline border-blue-400 text-blue-400">
+                            <button className="btn btn-outline border-blue-400 text-blue-400 w-36">
                                 FACEBOOK <FaFacebookSquare />
                             </button>
                         </a>
                         <a href="https://github.com/Galib-23" target="_blank" rel="noopener noreferrer">
-                            <button className="btn btn-outline btn-primary">
+                            <button className="btn btn-outline btn-primary  w-36">
                                 GITHUB <FaGithub />
                             </button>
                         </a>
                         <a href="https://www.instagram.com/galibillustrations/" target="_blank" rel="noopener noreferrer">
-                            <button className="btn btn-outline btn-secondary">
+                            <button className="btn btn-outline btn-secondary w-36">
                                 INSTAGRAM <FaInstagram></FaInstagram>
                             </button>
                         </a>
                         <a href="" target="_blank" rel="noopener noreferrer">
-                            <button className="btn btn-outline btn-accent">
+                            <button className="btn btn-outline btn-accent w-36">
                                 TWITTER <FaTwitter></FaTwitter>
                             </button>
                         </a>
                         <a href="https://youtu.be/HyWYpM_S-2c?feature=shared" target="_blank" rel="noopener noreferrer">
-                            <button className="btn btn-outline border-red-600 text-red-600">
+                            <button className="btn btn-outline border-red-600 text-red-600 w-36">
                                 YOUTUBE <FaYoutube></FaYoutube>
                             </button>
                         </a>
                         <a href="https://www.linkedin.com/in/asadullah-al-galib-982645284/" target="_blank" rel="noopener noreferrer">
-                            <button className="btn btn-outline border-green-500 text-green-500">
+                            <button className="btn btn-outline border-green-500 text-green-500 w-36">
                                 LINKEDIN <FaLinkedin></FaLinkedin>
                             </button>
                         </a>
