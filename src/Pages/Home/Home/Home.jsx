@@ -8,7 +8,7 @@ import Featured from "../Featured/Featured";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 import Timeline from "../Timeline/Timeline";
-import UiDesign from "../UI/UiDesign";
+// import UiDesign from "../UI/UiDesign";
 
 const Home = () => {
     return (
@@ -18,7 +18,7 @@ const Home = () => {
             <About></About>
             <Projects></Projects>
             <Designs></Designs>
-            <UiDesign></UiDesign>
+            {/* <UiDesign></UiDesign> */}
             <Featured></Featured>
             <Timeline></Timeline>
             <Skills></Skills>
