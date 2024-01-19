@@ -18,14 +18,19 @@ const About = () => {
                     <img className='w-48 mb-5 rounded-3xl' src={aboutimg} alt="" />
                     <h2 className='text-3xl text-white font-extrabold mb-7'>SOCIAL LINKS</h2>
                     <div className='grid grid-cols-2 md:grid-cols-3 gap-2'>
-                        <a href="https://web.facebook.com/profile.php?id=100076476525666" target="_blank" rel="noopener noreferrer">
-                            <button className="btn btn-outline border-blue-400 text-blue-400 w-36">
-                                FACEBOOK <FaFacebookSquare />
+                        <a href="https://www.linkedin.com/in/asadullah-al-galib-982645284/" target="_blank" rel="noopener noreferrer">
+                            <button className="btn btn-outline border-green-500 text-green-500 w-36">
+                                LINKEDIN <FaLinkedin></FaLinkedin>
                             </button>
                         </a>
                         <a href="https://github.com/Galib-23" target="_blank" rel="noopener noreferrer">
                             <button className="btn btn-outline btn-primary  w-36">
                                 GITHUB <FaGithub />
+                            </button>
+                        </a>
+                        <a href="https://web.facebook.com/profile.php?id=100076476525666" target="_blank" rel="noopener noreferrer">
+                            <button className="btn btn-outline border-blue-400 text-blue-400 w-36">
+                                FACEBOOK <FaFacebookSquare />
                             </button>
                         </a>
                         <a href="https://www.instagram.com/galibillustrations/" target="_blank" rel="noopener noreferrer">
@@ -41,11 +46,6 @@ const About = () => {
                         <a href="https://youtu.be/HyWYpM_S-2c?feature=shared" target="_blank" rel="noopener noreferrer">
                             <button className="btn btn-outline border-red-600 text-red-600 w-36">
                                 YOUTUBE <FaYoutube></FaYoutube>
-                            </button>
-                        </a>
-                        <a href="https://www.linkedin.com/in/asadullah-al-galib-982645284/" target="_blank" rel="noopener noreferrer">
-                            <button className="btn btn-outline border-green-500 text-green-500 w-36">
-                                LINKEDIN <FaLinkedin></FaLinkedin>
                             </button>
                         </a>
                     </div>

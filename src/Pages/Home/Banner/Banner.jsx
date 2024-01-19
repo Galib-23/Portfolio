@@ -34,7 +34,7 @@ const Banner = () => {
     return (
         <div id='banner' className="relative">
             {/* Content inside the section */}
-            <div className="absolute inset-0 z-10 flex flex-col-reverse md:flex-row items-center justify-evenly md:container mx-auto mt-14 md:mt-0">
+            <div className="absolute inset-0 z-10 flex flex-col-reverse md:flex-row items-center justify-evenly mt-14 md:mt-0">
                 <div data-aos="flip-left" className='w-1/2'>
                     <h2 className="text-center md:text-left text-lg md:text-3xl lg:text-5xl text-white font-extrabold uppercase">Hi, I am Galib!</h2>
                     <h2 className="text-center md:text-left text-2xl md:text-3xl lg:text-5xl text-white font-extrabold uppercase">
@@ -52,7 +52,7 @@ const Banner = () => {
                     </h2>
                     <p className='text-center md:text-left text-white mt-5 text-lg'>With a strong foundation in MongoDB, Express.js, React.js, and Node.js, I thrive on building robust, scalable, and efficient web applications that bring ideas to life. <span className='hidden md:flex'>Whether it is creating interactive user interfaces or architecting seamless backend systems, I love the challenge of turning concepts into reality through code.</span></p>
                     <div className='flex flex-col md:flex-row mb-10 md:mb-0 items-center md:items-start gap-4'>
-                        <button onClick={handleDownload} className="btn btn-accent btn-outline mt-6 mb-10 md:mb-0">DOWNLOAD CV
+                        <button onClick={handleDownload} className="btn btn-sm md:btn-md btn-accent btn-outline mt-6 mb-16 md:mb-0">DOWNLOAD CV
                             <IoMdDownload className='text-xl' />
                         </button>
                         <a href="https://youtu.be/ENrzD9HAZK4?feature=shared"  target="_blank" rel="noopener noreferrer">
@@ -62,10 +62,10 @@ const Banner = () => {
                         </a>
                     </div>
                 </div>
-                <div data-aos="flip-right" className="avatar">
-                    <div className="w-48 mt-10 mb-6 md:mb-0 md:mt-0 md:w-[400px] rounded-3xl border-b-8 border-t-8 p-3 border-cyan-600">
+                <div data-aos="flip-right">
+                    <div className="mt-16 p-2 mb-6 md:mb-0 md:mt-0 rounded-3xl border-y-8 border-cyan-600">
                         <Tilt>
-                            <img className='rounded-3xl' src={profile} />
+                            <img className='w-48 md:w-96 rounded-3xl' src={profile} />
                         </Tilt>
                     </div>
                 </div>
