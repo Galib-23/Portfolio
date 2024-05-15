@@ -84,13 +84,13 @@ const Projects = () => {
                     </div>
                     <div className='flex gap-2 mx-2 md:mx-0' data-aos="fade-up"
                         data-aos-duration="3000">
-                        <a href=""><button className="btn btn-outline mt-7 text-yellow-400">
+                        <a href="https://contestopia.web.app/"  target="_blank" rel="noopener noreferrer"><button className="btn btn-outline mt-7 text-yellow-400">
                             LIVE LINK <FaLink></FaLink>
                         </button></a>
-                        <a href=''><button className="btn btn-outline mt-7 text-red-800">
+                        <a href='https://github.com/Galib-23/Contestopia-Client' target="_blank" rel="noopener noreferrer"><button className="btn btn-outline mt-7 text-red-800">
                             FRONTEND <FaGithub></FaGithub>
                         </button></a>
-                        <a href=""><button className="btn btn-outline mt-7 text-cyan-500">
+                        <a href="https://github.com/Galib-23/Contestopia-Server" target="_blank" rel="noopener noreferrer"><button className="btn btn-outline mt-7 text-cyan-500">
                             BACKEND <FaGithub></FaGithub>
                         </button></a>
                     </div>
@@ -115,13 +115,13 @@ const Projects = () => {
                     </div>
                     <div className='flex gap-2 mx-2 md:mx-0' data-aos="fade-up"
                         data-aos-duration="3000">
-                        <a href=""><button className="btn btn-outline mt-7 text-yellow-400">
+                        <a href="https://flavor-fusion-2538c.web.app/" target="_blank" rel="noopener noreferrer"><button className="btn btn-outline mt-7 text-yellow-400">
                             LIVE LINK <FaLink></FaLink>
                         </button></a>
-                        <a href=''><button className="btn btn-outline mt-7 text-red-800">
+                        <a href='https://github.com/Galib-23/Flavor-Fusion-Client' target="_blank" rel="noopener noreferrer"><button className="btn btn-outline mt-7 text-red-800">
                             FRONTEND <FaGithub></FaGithub>
                         </button></a>
-                        <a href=""><button className="btn btn-outline mt-7 text-cyan-500">
+                        <a href="https://github.com/Galib-23/Flavor-Fusion-Server" target="_blank" rel="noopener noreferrer"><button className="btn btn-outline mt-7 text-cyan-500">
                             BACKEND <FaGithub></FaGithub>
                         </button></a>
                     </div>
@@ -145,13 +145,13 @@ const Projects = () => {
                         />
                     </div>
                     <div className='flex gap-2 mx-2 md:mx-0' data-aos="fade-up">
-                        <a href=""><button className="btn btn-outline mt-7 text-yellow-400">
+                        <a href="https://nano-nest-abad6.web.app/" target="_blank" rel="noopener noreferrer"><button className="btn btn-outline mt-7 text-yellow-400">
                             LIVE LINK <FaLink></FaLink>
                         </button></a>
-                        <a href=''><button className="btn btn-outline mt-7 text-red-800">
+                        <a href='https://github.com/Galib-23/Nano-Nest-Client' target="_blank" rel="noopener noreferrer"><button className="btn btn-outline mt-7 text-red-800">
                             FRONTEND <FaGithub></FaGithub>
                         </button></a>
-                        <a href=""><button className="btn btn-outline mt-7 text-cyan-500">
+                        <a href="https://github.com/Galib-23/Nano-Nest-Server" target="_blank" rel="noopener noreferrer"><button className="btn btn-outline mt-7 text-cyan-500">
                             BACKEND <FaGithub></FaGithub>
                         </button></a>
                     </div>
