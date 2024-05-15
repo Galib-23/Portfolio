@@ -33,11 +33,11 @@ const Banner = () => {
     }, [words.length]);
     return (
 
-<div className="hero min-h-screen" style={{backgroundImage: `url(${banner})`}}>
+<div className="hero min-h-screen" id='banner' style={{backgroundImage: `url(${banner})`}}>
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
   <div className="inset-0 z-10 flex flex-col-reverse md:flex-row items-center justify-evenly ">
-                <div data-aos="flip-left" className='w-1/2'>
+                <div data-aos="flip-left" className='md:w-1/2'>
                     <h2 className="text-center md:text-left text-lg md:text-3xl lg:text-5xl text-white font-extrabold uppercase">Hi, I am Galib!</h2>
                     <h2 className="text-center md:text-left text-2xl md:text-3xl lg:text-5xl text-white font-extrabold uppercase">
                         Dynamic{' '}
@@ -53,11 +53,11 @@ const Banner = () => {
                         </motion.span>
                     </h2>
                     <p className='text-center md:text-left text-white mt-5 text-lg'>With a strong foundation in MongoDB, Express.js, React.js, and Node.js, I thrive on building robust, scalable, and efficient web applications that bring ideas to life. <span className='hidden md:flex'>Whether it is creating interactive user interfaces or architecting seamless backend systems, I love the challenge of turning concepts into reality through code.</span></p>
-                    <div className='flex flex-col md:flex-row mb-10 md:mb-0 items-center md:items-start gap-4'>
-                        <button className="btn btn-md md:btn-md btn-accent btn-outline mt-6 md:mb-0">DOWNLOAD CV
+                    <div className='flex flex-col md:flex-row mt-6 mb-5 md:mb-0 items-center md:items-start gap-4'>
+                        <button className="btn btn-md md:btn-md btn-accent btn-outline md:mb-0">DOWNLOAD CV
                             <IoMdDownload className='text-xl' />
                         </button>
-                        <a href="https://youtu.be/ENrzD9HAZK4?feature=shared"  target="_blank" rel="noopener noreferrer">
+                        <a href="https://youtu.be/RusKXEW1Lb8?feature=shared"  target="_blank" rel="noopener noreferrer">
                             <button className="btn btn-secondary btn-outline">WATCH VIDEO
                                 <IoPlayCircleSharp className='text-xl' />
                             </button>
