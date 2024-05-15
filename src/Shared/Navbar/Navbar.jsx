@@ -50,11 +50,11 @@ const Navbar = () => {
                             <h2 className="text-lg font-bold mt-4">Contact Info:</h2>
                             <p>Email: aagalib2323@gmail.com</p>
                             <p>Phone: +8801772967677</p>
-                            <p className="mt-2">Thanks for visiting</p>
                             <h2 className="text-lg font-bold mt-4">Address:</h2>
                             <p>Paba, Katakhali, Rajshahi</p>
                             <p>Post Code: 6211</p>
                             <p>BANGLADESH</p>
+                            
                         </div>
                     </ul>
                 </details>

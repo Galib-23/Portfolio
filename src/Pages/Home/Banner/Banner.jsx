@@ -13,14 +13,14 @@ const Banner = () => {
     }, []);
 
     //https://drive.google.com/file/d/1nESC9sA3vCql0HoKwxsVlymvBvw_Nd7r/view?usp=sharing
-    const googleDrivePDFLink = 'https://drive.google.com/uc?export=download&id=1nESC9sA3vCql0HoKwxsVlymvBvw_Nd7r';
-    const handleDownload = () => {
-        const directDownloadLink = googleDrivePDFLink.replace('open', 'uc');
-        const downloadAnchor = document.createElement('a');
-        downloadAnchor.href = directDownloadLink;
-        downloadAnchor.download = 'task2.pdf';
-        downloadAnchor.click();
-    };
+    // const googleDrivePDFLink = 'https://drive.google.com/uc?export=download&id=1nESC9sA3vCql0HoKwxsVlymvBvw_Nd7r';
+    // const handleDownload = () => {
+    //     const directDownloadLink = googleDrivePDFLink.replace('open', 'uc');
+    //     const downloadAnchor = document.createElement('a');
+    //     downloadAnchor.href = directDownloadLink;
+    //     downloadAnchor.download = 'task2.pdf';
+    //     downloadAnchor.click();
+    // };
 
     const words = ['Developer', 'Coder', 'Designer'];
     const [index, setIndex] = useState(0);
@@ -32,9 +32,11 @@ const Banner = () => {
         return () => clearInterval(interval);
     }, [words.length]);
     return (
-        <div id='banner' className="relative">
-            {/* Content inside the section */}
-            <div className="absolute inset-0 z-10 flex flex-col-reverse md:flex-row items-center justify-evenly mt-14 md:mt-0">
+
+<div className="hero min-h-screen" style={{backgroundImage: `url(${banner})`}}>
+  <div className="hero-overlay bg-opacity-60"></div>
+  <div className="hero-content text-center text-neutral-content">
+  <div className="inset-0 z-10 flex flex-col-reverse md:flex-row items-center justify-evenly ">
                 <div data-aos="flip-left" className='w-1/2'>
                     <h2 className="text-center md:text-left text-lg md:text-3xl lg:text-5xl text-white font-extrabold uppercase">Hi, I am Galib!</h2>
                     <h2 className="text-center md:text-left text-2xl md:text-3xl lg:text-5xl text-white font-extrabold uppercase">
@@ -52,11 +54,11 @@ const Banner = () => {
                     </h2>
                     <p className='text-center md:text-left text-white mt-5 text-lg'>With a strong foundation in MongoDB, Express.js, React.js, and Node.js, I thrive on building robust, scalable, and efficient web applications that bring ideas to life. <span className='hidden md:flex'>Whether it is creating interactive user interfaces or architecting seamless backend systems, I love the challenge of turning concepts into reality through code.</span></p>
                     <div className='flex flex-col md:flex-row mb-10 md:mb-0 items-center md:items-start gap-4'>
-                        <button onClick={handleDownload} className="btn btn-sm md:btn-md btn-accent btn-outline mt-6 mb-16 md:mb-0">DOWNLOAD CV
+                        <button className="btn btn-md md:btn-md btn-accent btn-outline mt-6 md:mb-0">DOWNLOAD CV
                             <IoMdDownload className='text-xl' />
                         </button>
                         <a href="https://youtu.be/ENrzD9HAZK4?feature=shared"  target="_blank" rel="noopener noreferrer">
-                            <button className="btn btn-secondary btn-outline mt-6 hidden md:flex">WATCH VIDEO
+                            <button className="btn btn-secondary btn-outline">WATCH VIDEO
                                 <IoPlayCircleSharp className='text-xl' />
                             </button>
                         </a>
@@ -70,15 +72,9 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
+  </div>
+</div>
             
-            <div
-                className="md:relative min-h-screen bg-cover bg-center"
-                style={{
-                    backgroundImage: `url(${banner})`,
-                    backgroundColor: 'rgba(0, 0, 0, 0.3)',
-                }}
-            />
-        </div>
     );
 };
 
