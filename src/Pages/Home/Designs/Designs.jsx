@@ -44,7 +44,7 @@ const Designs = () => {
           className="hidden md:flex md:flex-col items-center md:items-end text-center md:text-right"
         >
           <Lottie
-            className="w-[350px] md:w-[500px]"
+            className="w-[350px] md:w-[400px]"
             animationData={animationData}
           />
         </div>

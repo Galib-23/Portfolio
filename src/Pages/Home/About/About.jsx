@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import aboutbg from "../../../assets/aboutbg.jpg";
-import aboutimg from "../../../assets/edit1.jpg";
+import aboutimg from "../../../assets/edit1.jpeg";
 import {
   FaFacebookSquare,
   FaGithub,
@@ -49,7 +49,7 @@ const About = () => {
             src={aboutimg}
             alt=""
           />
-          <h2 className="text-3xl text-orange-400 font-extrabold mb-7">
+          <h2 className="text-3xl text-white font-extrabold mb-7">
             SOCIAL LINKS
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-4">
