@@ -38,7 +38,7 @@ const Navbar = () => {
             <div className="navbar-end">
                 <details className="dropdown dropdown-left dropdown-bottom z-50">
                     <summary className="btn btn-accent btn-outline border-cyan-300 border-2"><FiAlignJustify className="text-xl text-cyan-300"></FiAlignJustify></summary>
-                    <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-60">
+                    <ul className="p-2 shadow menu dropdown-content z-[1] bg-slate-300 rounded-box w-60">
                         <div className="flex flex-col items-center text-black">
                             <div className="avatar">
                                 <div className="w-24 rounded-full">
