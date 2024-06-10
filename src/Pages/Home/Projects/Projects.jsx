@@ -2,6 +2,8 @@
 import nanonest from '../../../assets/nanonest.png';
 import contestopia from '../../../assets/contestopia.png'
 import flavor from '../../../assets/flavor.png'
+import promptFusion from '../../../assets/prompt-fusion.png';
+import urbanU from '../../../assets/urban-u.png';
 
 import React, { useRef } from 'react';
 import AOS from 'aos';
@@ -16,6 +18,8 @@ const Projects = () => {
     const containerRef1 = useRef(null);
     const containerRef2 = useRef(null);
     const containerRef3 = useRef(null);
+    const containerRef4 = useRef(null);
+    const containerRef5 = useRef(null);
     let scrollIntervalToBottom;
     let scrollIntervalToTop;
 
@@ -64,6 +68,7 @@ const Projects = () => {
                 <h2 className='text-4xl font-extrabold text-center text-cyan-400 mb-5'>MY PROJECTS</h2>
                 <p className='text-center font-semibold text-cyan-100 mb-20'>I have developed a series of dynamic web applications leveraging the MERN stack, showcasing <br /> my proficiency in MongoDB, Express.js, React, and Node.js. Using technologies like <br /> Tailwind CSS for sleek designs, Axios for efficient API requests, and Tanstack Query for seamless data management, <br /> these projects exhibit my expertise in modern web development practices.</p>
             </div>
+            <h3 className='text-2xl font-semibold text-center text-blue-400 mb-12 underline'>Fullstack Projects: (FRONTEND FOCUSED)</h3>
             <div className='flex gap-16 justify-center flex-col md:flex-row'>
                 <div className='flex flex-col items-center'>
                     <div
@@ -153,6 +158,66 @@ const Projects = () => {
                         </button></a>
                         <a href="https://github.com/Galib-23/Nano-Nest-Server" target="_blank" rel="noopener noreferrer"><button className="btn btn-outline mt-7 text-cyan-500">
                             BACKEND <FaGithub></FaGithub>
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <h3 className='text-2xl font-semibold text-center text-blue-300 mb-12 mt-24 underline'>Fullstack Projects (BACKEND FOCUSED)</h3>
+            <div className='flex gap-16 justify-center flex-col md:flex-row'>
+                <div className='flex flex-col items-center'>
+                    <div
+                        className="md:w-96 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+                        data-aos="fade-up"
+                        style={{ overflow: 'hidden' }}
+                        onMouseEnter={handleMouseEnter(containerRef4)}
+                        onMouseLeave={handleMouseLeave(containerRef4)}
+                        onClick={handleResetScroll(containerRef4)}
+                        ref={containerRef4}
+                    >
+                        <img
+                            src={urbanU}
+                            alt="Scrollable Image 1"
+                            className="w-full h-auto"
+                            style={{ transition: 'transform 0.3s ease-in-out' }}
+                        />
+                    </div>
+                    <div className='flex gap-2 mx-2 md:mx-0' data-aos="fade-up"
+                        data-aos-duration="3000">
+                        <a href="https://urban-u.onrender.com/"  target="_blank" rel="noopener noreferrer"><button className="btn btn-outline mt-7 text-yellow-400">
+                            LIVE LINK <FaLink></FaLink>
+                        </button></a>
+                        <a href='https://github.com/Galib-23/Urban-U' target="_blank" rel="noopener noreferrer"><button className="btn btn-outline mt-7 text-cyan-500">
+                            GITHUB <FaGithub></FaGithub>
+                        </button></a>
+                    </div>
+                </div>
+
+                <div className='flex flex-col items-center'>
+                    <div
+                        className="md:w-96 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+                        data-aos="fade-up"
+                        style={{ overflow: 'hidden' }}
+                        onMouseEnter={handleMouseEnter(containerRef5)}
+                        onMouseLeave={handleMouseLeave(containerRef5)}
+                        onClick={handleResetScroll(containerRef5)}
+                        ref={containerRef5}
+                    >
+                        <img
+                            src={promptFusion}
+                            alt="Scrollable Image 2"
+                            className="w-full h-auto"
+                            style={{ transition: 'transform 0.3s ease-in-out' }}
+                        />
+                    </div>
+                    <div className='flex gap-2 mx-2 md:mx-0' data-aos="fade-up"
+                        data-aos-duration="3000">
+                        <a href="https://prompt-fusion-three.vercel.app/" target="_blank" rel="noopener noreferrer"><button className="btn btn-outline mt-7 text-yellow-400">
+                            LIVE LINK <FaLink></FaLink>
+                        </button></a>
+                        <a href='https://github.com/Galib-23/Prompt-Fusion' target="_blank" rel="noopener noreferrer"><button className="btn btn-outline mt-7 text-cyan-500">
+                            GITHUB <FaGithub></FaGithub>
                         </button></a>
                     </div>
                 </div>
