@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import banner from '../../../assets/banner1.jpg';
-import profile from '../../../assets/edit2.jpeg';
+import profile from '../../../assets/edit3.jpeg';
 import { motion } from "framer-motion";
 import { IoMdDownload } from "react-icons/io";
 import { IoPlayCircleSharp } from "react-icons/io5";
@@ -65,9 +65,9 @@ const Banner = () => {
                     </div>
                 </div>
                 <div data-aos="flip-right">
-                    <div className="mt-16 p-2 mb-6 md:mb-0 md:mt-0 rounded-3xl border-y-8 border-cyan-600">
+                    <div className="mt-16 w-48 md:w-72 p-2 mb-6 md:mb-0 md:mt-0 rounded-3xl border-y-8 border-cyan-600">
                         <Tilt>
-                            <img className='w-48 md:w-96 rounded-3xl' src={profile} />
+                            <img className='w-full rounded-3xl' src={profile} />
                         </Tilt>
                     </div>
                 </div>

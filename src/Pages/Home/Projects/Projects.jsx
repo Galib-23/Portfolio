@@ -74,13 +74,17 @@ const Projects = () => {
           expertise in modern web development practices.
         </p>
       </div>
-      <Youtube srcVid={'https://www.youtube.com/embed/P_LGaic74KY?si=Yih7qE724k1aT9-g&autoplay=1'} />
-      <div className="flex flex-col items-center mt-24 mb-10 mx-4 md:mx-0">
-        <button className="border-b-2 border-blue-400 pb-2 text-xl font-semibold text-blue-300 cursor-text">
+      <Youtube
+        srcVid={
+          "https://www.youtube.com/embed/P_LGaic74KY?si=Yih7qE724k1aT9-g&autoplay=1"
+        }
+      />
+      <div className="flex flex-col items-center mt-36 mb-10 mx-4 md:mx-0">
+        <button className="pb-2 text-2xl font-semibold text-white cursor-text">
           FULLSTACK PROJECTS: (Frontend Focused)
         </button>
       </div>
-      <div className="flex gap-16 justify-center flex-col md:flex-row">
+      <div className="flex gap-16 justify-center flex-col md:flex-row mb-28">
         <div className="flex flex-col items-center">
           <div
             className="md:w-96 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
@@ -237,8 +241,8 @@ const Projects = () => {
         srcVid={"https://www.youtube.com/embed/RusKXEW1Lb8?si=3uFH2yjQpd3QxI_U"}
       />
 
-<div className="flex flex-col items-center mb-12 mt-24 mx-4 md:mx-0">
-        <button className="border-b-2 border-blue-400 pb-2 text-xl font-semibold text-blue-300 cursor-text">
+      <div className="flex flex-col items-center mb-12 mt-40 mx-4 md:mx-0">
+        <button className="pb-2 text-2xl font-semibold text-white cursor-text">
           FULLSTACK PROJECTS: (Backend Focused)
         </button>
       </div>
