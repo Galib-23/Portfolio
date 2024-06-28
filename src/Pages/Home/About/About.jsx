@@ -21,7 +21,7 @@ const About = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div id="about" className="relative mt-14 md:mt-0">
+    <div id="about" className="relative">
       {/* Content inside the section */}
       <div className="absolute inset-0 z-10 flex flex-col md:flex-row items-center justify-center gap-12 md:gap-0 md:justify-evenly md:container mx-auto">
         <div

@@ -87,7 +87,7 @@ const Projects = () => {
       <div className="flex gap-16 justify-center flex-col md:flex-row mb-28">
         <div className="flex flex-col items-center">
           <div
-            className="md:w-96 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+            className="md:w-80 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
             data-aos="fade-up"
             style={{ overflow: "hidden" }}
             onMouseEnter={handleMouseEnter(containerRef1)}
@@ -112,7 +112,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-outline mt-7 text-yellow-400">
+              <button className="btn btn-sm text-xs btn-outline mt-7 text-yellow-400">
                 LIVE LINK <FaLink></FaLink>
               </button>
             </a>
@@ -121,7 +121,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-outline mt-7 text-red-800">
+              <button className="btn btn-sm text-xs btn-outline mt-7 text-red-800">
                 FRONTEND <FaGithub></FaGithub>
               </button>
             </a>
@@ -130,7 +130,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-outline mt-7 text-cyan-500">
+              <button className="btn btn-sm text-xs btn-outline mt-7 text-cyan-500">
                 BACKEND <FaGithub></FaGithub>
               </button>
             </a>
@@ -139,7 +139,7 @@ const Projects = () => {
 
         <div className="flex flex-col items-center">
           <div
-            className="md:w-96 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+            className="md:w-80 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
             data-aos="fade-up"
             style={{ overflow: "hidden" }}
             onMouseEnter={handleMouseEnter(containerRef2)}
@@ -164,7 +164,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-outline mt-7 text-yellow-400">
+              <button className="btn btn-sm text-xs btn-outline mt-7 text-yellow-400">
                 LIVE LINK <FaLink></FaLink>
               </button>
             </a>
@@ -173,7 +173,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-outline mt-7 text-red-800">
+              <button className="btn btn-sm text-xs btn-outline mt-7 text-red-800">
                 FRONTEND <FaGithub></FaGithub>
               </button>
             </a>
@@ -182,7 +182,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-outline mt-7 text-cyan-500">
+              <button className="btn btn-sm text-xs btn-outline mt-7 text-cyan-500">
                 BACKEND <FaGithub></FaGithub>
               </button>
             </a>
@@ -191,7 +191,7 @@ const Projects = () => {
 
         <div className="flex flex-col items-center">
           <div
-            className="md:w-96 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+            className="md:w-80 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
             data-aos="fade-up"
             style={{ overflow: "hidden" }}
             onMouseEnter={handleMouseEnter(containerRef3)}
@@ -212,7 +212,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-outline mt-7 text-yellow-400">
+              <button className="btn btn-sm text-xs btn-outline mt-7 text-yellow-400">
                 LIVE LINK <FaLink></FaLink>
               </button>
             </a>
@@ -221,7 +221,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-outline mt-7 text-red-800">
+              <button className="btn btn-sm text-xs btn-outline mt-7 text-red-800">
                 FRONTEND <FaGithub></FaGithub>
               </button>
             </a>
@@ -230,7 +230,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-outline mt-7 text-cyan-500">
+              <button className="btn btn-sm text-xs btn-outline mt-7 text-cyan-500">
                 BACKEND <FaGithub></FaGithub>
               </button>
             </a>
@@ -249,7 +249,7 @@ const Projects = () => {
       <div className="flex gap-16 justify-center flex-col md:flex-row">
         <div className="flex flex-col items-center">
           <div
-            className="md:w-96 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+            className="md:w-80 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
             data-aos="fade-up"
             style={{ overflow: "hidden" }}
             onMouseEnter={handleMouseEnter(containerRef4)}
@@ -274,7 +274,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-outline mt-7 text-yellow-400">
+              <button className="btn btn-sm text-xs btn-outline mt-7 text-yellow-400">
                 LIVE LINK <FaLink></FaLink>
               </button>
             </a>
@@ -283,7 +283,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-outline mt-7 text-cyan-500">
+              <button className="btn btn-sm text-xs btn-outline mt-7 text-cyan-500">
                 GITHUB <FaGithub></FaGithub>
               </button>
             </a>
@@ -292,7 +292,7 @@ const Projects = () => {
 
         <div className="flex flex-col items-center">
           <div
-            className="md:w-96 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+            className="md:w-80 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
             data-aos="fade-up"
             style={{ overflow: "hidden" }}
             onMouseEnter={handleMouseEnter(containerRef5)}
@@ -317,7 +317,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-outline mt-7 text-yellow-400">
+              <button className="btn btn-sm text-xs btn-outline mt-7 text-yellow-400">
                 LIVE LINK <FaLink></FaLink>
               </button>
             </a>
@@ -326,7 +326,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-outline mt-7 text-cyan-500">
+              <button className="btn btn-sm text-xs btn-outline mt-7 text-cyan-500">
                 GITHUB <FaGithub></FaGithub>
               </button>
             </a>
