@@ -87,7 +87,7 @@ const Projects = () => {
       <div className="flex gap-16 justify-center flex-col md:flex-row mb-28">
         <div className="flex flex-col items-center">
           <div
-            className="md:w-80 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+            className="md:w-80 mx-3 md:mx-0 h-96 border border-cyan-500 relative overflow-hidden rounded-xl"
             data-aos="fade-up"
             style={{ overflow: "hidden" }}
             onMouseEnter={handleMouseEnter(containerRef1)}
@@ -139,7 +139,7 @@ const Projects = () => {
 
         <div className="flex flex-col items-center">
           <div
-            className="md:w-80 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+            className="md:w-80 mx-3 md:mx-0 h-96 border border-cyan-500 relative overflow-hidden rounded-xl"
             data-aos="fade-up"
             style={{ overflow: "hidden" }}
             onMouseEnter={handleMouseEnter(containerRef2)}
@@ -191,7 +191,7 @@ const Projects = () => {
 
         <div className="flex flex-col items-center">
           <div
-            className="md:w-80 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+            className="md:w-80 mx-3 md:mx-0 h-96 border border-cyan-500 relative overflow-hidden rounded-xl"
             data-aos="fade-up"
             style={{ overflow: "hidden" }}
             onMouseEnter={handleMouseEnter(containerRef3)}
@@ -249,7 +249,7 @@ const Projects = () => {
       <div className="flex gap-16 justify-center flex-col md:flex-row">
         <div className="flex flex-col items-center">
           <div
-            className="md:w-80 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+            className="md:w-80 mx-3 md:mx-0 h-96 border border-cyan-500 relative overflow-hidden rounded-xl"
             data-aos="fade-up"
             style={{ overflow: "hidden" }}
             onMouseEnter={handleMouseEnter(containerRef4)}
@@ -292,7 +292,7 @@ const Projects = () => {
 
         <div className="flex flex-col items-center">
           <div
-            className="md:w-80 mx-3 md:mx-0 h-96 border border-gray-300 relative overflow-hidden rounded-xl"
+            className="md:w-80 mx-3 md:mx-0 h-96 border border-cyan-500 relative overflow-hidden rounded-xl"
             data-aos="fade-up"
             style={{ overflow: "hidden" }}
             onMouseEnter={handleMouseEnter(containerRef5)}
@@ -336,7 +336,7 @@ const Projects = () => {
       <Youtube
         srcVid={`https://www.youtube.com/embed/c-09QAca8OM?si=N0jEc8HeFQ0Zs1j_&amp;start=1`}
       />
-    </div>
+    </div> 
   );
 };
 
