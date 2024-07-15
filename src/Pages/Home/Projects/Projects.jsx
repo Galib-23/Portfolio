@@ -80,8 +80,8 @@ const Projects = () => {
         }
       />
       <div className="flex flex-col items-center mt-36 mb-10 mx-4 md:mx-0">
-        <button className="pb-2 text-2xl font-semibold text-white cursor-text">
-          FULLSTACK PROJECTS: (Frontend Focused)
+        <button className="pb-2 text-2xl font-semibold text-cyan-400 cursor-text">
+          FULLSTACK PROJECTS - (Frontend Focused)
         </button>
       </div>
       <div className="flex gap-16 justify-center flex-col md:flex-row mb-28">
@@ -242,7 +242,7 @@ const Projects = () => {
       />
 
       <div className="flex flex-col items-center mb-12 mt-40 mx-4 md:mx-0">
-        <button className="pb-2 text-2xl font-semibold text-white cursor-text">
+        <button className="pb-2 text-2xl font-semibold text-cyan-400 cursor-text">
           FULLSTACK PROJECTS: (Backend Focused)
         </button>
       </div>

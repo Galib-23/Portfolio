@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import banner from "../../../assets/banner1.jpg";
 import profile from "../../../assets/edit3.jpeg";
 import { motion } from "framer-motion";
-import { IoMdDownload } from "react-icons/io";
-import { IoPlayCircleSharp } from "react-icons/io5";
+import { IoBookOutline, IoEye, } from "react-icons/io5";
 import Tilt from "react-parallax-tilt";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -25,7 +24,7 @@ const Banner = () => {
   //     downloadAnchor.click();
   // };
 
-  const words = ["Developer", "Coder", "Designer"];
+  const words = ["Developer", "Programmer", "Designer"];
   const [index, setIndex] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -177,8 +176,8 @@ const Banner = () => {
             <h2 className="text-center md:text-left text-lg md:text-3xl lg:text-5xl text-white font-extrabold uppercase">
               Hi, I am Galib!
             </h2>
-            <h2 className="text-center md:text-left text-2xl md:text-3xl lg:text-5xl text-white font-extrabold uppercase">
-              Dynamic{" "}
+            <h2 className="text-center md:text-left text-md md:text-3xl mt-1 text-white font-extrabold uppercase">
+              I&apos;m a{" "}
               <motion.span
                 className="text-cyan-400"
                 key={words[index]}
@@ -203,19 +202,19 @@ const Banner = () => {
             <div className="flex flex-col md:flex-row mt-6 mb-5 md:mb-0 items-center md:items-start gap-4">
               <button
                 onClick={handleCVClick}
-                className="btn btn-md md:btn-md btn-accent btn-outline md:mb-0"
+                className="btn btn-md md:btn-md btn-accent btn-outline md:mb-0 uppercase"
               >
-                DOWNLOAD CV
-                <IoMdDownload className="text-xl" />
+                View CV
+                <IoEye className="text-xl" />
               </button>
               <a
-                href="https://youtu.be/RusKXEW1Lb8?feature=shared"
+                href="https://galib-blog.web.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="btn btn-secondary btn-outline">
-                  WATCH VIDEO
-                  <IoPlayCircleSharp className="text-xl" />
+                <button className="btn text-fuchsia-500 btn-outline uppercase">
+                  My blog
+                  <IoBookOutline className="text-xl" />
                 </button>
               </a>
             </div>
