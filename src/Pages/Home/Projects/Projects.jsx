@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaGithub, FaLink } from "react-icons/fa";
 import Youtube from "../youtube/Youtube";
+import BackendProjects from "../backend-projects/BackendProjects";
 
 const Projects = () => {
   React.useEffect(() => {
@@ -333,6 +334,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      <BackendProjects />
       <Youtube
         srcVid={`https://www.youtube.com/embed/c-09QAca8OM?si=N0jEc8HeFQ0Zs1j_&amp;start=1`}
       />

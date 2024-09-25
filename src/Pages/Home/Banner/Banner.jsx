@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import banner from "../../../assets/banner1.jpg";
 import profile from "../../../assets/edit3.jpeg";
 import { motion } from "framer-motion";
-import { IoBookOutline, IoEye, } from "react-icons/io5";
+import { IoBookOutline, IoEye } from "react-icons/io5";
 import Tilt from "react-parallax-tilt";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -77,7 +77,7 @@ const Banner = () => {
                   Swal.fire({
                     title: "Here's my CV",
                     html: `
-                    <a href="https://drive.google.com/file/d/1XAQ6ZQheVEiPAjF6t_Jti2Uf58iPvVZK/view?usp=drive_link"
+                    <a href="https://drive.google.com/file/d/13y0E_ZFAjBXFGcAksnQmJN_FEdCqkdG5/view?usp=drive_link"
      target="_blank"
      rel="noopener noreferrer"
      style="text-decoration: underline; font-weight: 600; color: blue;">
