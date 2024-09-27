@@ -1,6 +1,6 @@
 import { FiAlignJustify } from "react-icons/fi";
 import glogo from '../../assets/glogo.png';
-import profile from '../../assets/edit2.jpeg';
+import profile from '../../assets/edit3.jpeg';
 import {Link} from 'react-scroll';
 
 const Navbar = () => {

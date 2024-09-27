@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import aboutbg from "../../../assets/aboutbg.jpg";
-import aboutimg from "../../../assets/edit1.jpeg";
+import aboutimg from "../../../assets/edit1.jpg"
 import {
   FaFacebookSquare,
   FaGithub,
