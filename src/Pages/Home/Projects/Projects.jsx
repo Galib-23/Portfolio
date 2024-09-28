@@ -63,11 +63,7 @@ const Projects = () => {
         </h2>
         <p className="text-center font-semibold text-white mb-20">
           I have developed a series of dynamic web applications leveraging the
-          MERN stack, showcasing <br /> my proficiency in MongoDB, Express.js,
-          React, and Node.js. Using technologies like <br /> Tailwind CSS for
-          sleek designs, Axios for efficient API requests, and Tanstack Query
-          for seamless data management, <br /> these projects exhibit my
-          expertise in modern web development practices.
+          Different stacks, showcasing <br /> my proficiency in in modern web development technologies & practices.
         </p>
       </div>
       
