@@ -17,6 +17,11 @@ const Youtube = () => {
 
   return (
     <div className="mx-2 md:mx-28">
+      <div className="flex flex-col items-center mb-12 mt-40 mx-4 md:mx-0">
+        <button className="pb-2 text-2xl font-semibold text-cyan-400 cursor-text">
+        Explore a Glimpse of My Creations
+        </button>
+      </div>
       <Carousel
         showThumbs={true}
         className="text-center max-w-screen-2xl"

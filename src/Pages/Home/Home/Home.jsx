@@ -2,6 +2,7 @@ import CallToAction from "../../../components/CallToAction";
 import Footer from "../../../Shared/Footer/Footer";
 import Navbar from "../../../Shared/Navbar/Navbar";
 import About from "../About/About";
+import BackendProjects from "../backend-projects/BackendProjects";
 import Banner from "../Banner/Banner";
 import { ContactUs } from "../ContactUs/ContactUs";
 import Designs from "../Designs/Designs";
@@ -19,6 +20,7 @@ const Home = () => {
             <Banner></Banner>
             <About></About>
             <Projects></Projects>
+            <BackendProjects />
             <Youtube />
             <CallToAction />
             <Designs></Designs>
