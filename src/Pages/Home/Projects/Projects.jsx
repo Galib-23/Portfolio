@@ -8,7 +8,6 @@ import React, { useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaGithub, FaLink } from "react-icons/fa";
-import Youtube from "../youtube/Youtube";
 import BackendProjects from "../backend-projects/BackendProjects";
 
 const Projects = () => {
@@ -75,11 +74,7 @@ const Projects = () => {
           expertise in modern web development practices.
         </p>
       </div>
-      <Youtube
-        srcVid={
-          "https://www.youtube.com/embed/P_LGaic74KY?si=Yih7qE724k1aT9-g&autoplay=1"
-        }
-      />
+      
       <div className="flex flex-col items-center mt-36 mb-10 mx-4 md:mx-0">
         <button className="pb-2 text-2xl font-semibold text-cyan-400 cursor-text">
           FULLSTACK PROJECTS - (Frontend Focused)
@@ -238,9 +233,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <Youtube
-        srcVid={"https://www.youtube.com/embed/RusKXEW1Lb8?si=3uFH2yjQpd3QxI_U"}
-      />
 
       <div className="flex flex-col items-center mb-12 mt-40 mx-4 md:mx-0">
         <button className="pb-2 text-2xl font-semibold text-cyan-400 cursor-text">
@@ -335,9 +327,6 @@ const Projects = () => {
         </div>
       </div>
       <BackendProjects />
-      <Youtube
-        srcVid={`https://www.youtube.com/embed/c-09QAca8OM?si=N0jEc8HeFQ0Zs1j_&amp;start=1`}
-      />
     </div> 
   );
 };

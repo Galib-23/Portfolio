@@ -9,6 +9,7 @@ import Featured from "../Featured/Featured";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 import Timeline from "../Timeline/Timeline";
+import Youtube from "../youtube/Youtube";
 // import UiDesign from "../UI/UiDesign";
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
             <Banner></Banner>
             <About></About>
             <Projects></Projects>
+            <Youtube />
             <CallToAction />
             <Designs></Designs>
             {/* <UiDesign></UiDesign> */}

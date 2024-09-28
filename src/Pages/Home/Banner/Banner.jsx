@@ -190,14 +190,10 @@ const Banner = () => {
               </motion.span>
             </h2>
             <p className="text-center md:text-left text-white mt-5 text-lg">
-              With a strong foundation in MongoDB, Express.js, React.js, and
-              Node.js, I thrive on building robust, scalable, and efficient web
-              applications that bring ideas to life.{" "}
-              <span className="hidden md:flex">
-                Whether it is creating interactive user interfaces or
-                architecting seamless backend systems, I love the challenge of
-                turning concepts into reality through code.
-              </span>
+              I am a dedicated Full Stack Developer and Backend Enthusiast with
+              a strong focus on building efficient, scalable web applications. I
+              enjoy solving complex technical challenges and have experience
+              developing both frontend and backend systems.
             </p>
             <div className="flex flex-col md:flex-row mt-6 mb-5 md:mb-0 items-center md:items-start gap-4">
               <button
