@@ -14,15 +14,21 @@ const Banner = () => {
     Aos.init({ duration: 2000 });
   }, []);
 
-  //https://drive.google.com/file/d/1nESC9sA3vCql0HoKwxsVlymvBvw_Nd7r/view?usp=sharing
-  // const googleDrivePDFLink = 'https://drive.google.com/uc?export=download&id=1nESC9sA3vCql0HoKwxsVlymvBvw_Nd7r';
-  // const handleDownload = () => {
-  //     const directDownloadLink = googleDrivePDFLink.replace('open', 'uc');
-  //     const downloadAnchor = document.createElement('a');
-  //     downloadAnchor.href = directDownloadLink;
-  //     downloadAnchor.download = 'task2.pdf';
-  //     downloadAnchor.click();
-  // };
+  const trackVisitor = async () => {
+    const ipResponse = await fetch("https://api.ipify.org?format=json");
+    const { ip } = await ipResponse.json();
+    const userAgent = navigator.userAgent;
+    const locationResponse = await fetch(`https://ipapi.co/${ip}/json/`);
+    const locationData = await locationResponse.json();
+    const location = locationData.city + ", " + locationData.country;
+    await fetch("https://p-server-mu.vercel.app/api/click-button", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ ip, location, userAgent }),
+    });
+  };
 
   const words = ["Developer", "Programmer", "Designer"];
   const [index, setIndex] = useState(0);
@@ -43,6 +49,7 @@ const Banner = () => {
   });
 
   const handleCVClick = () => {
+    trackVisitor();
     swalWithBootstrapButtons
       .fire({
         title: "Are you a Hirer?",

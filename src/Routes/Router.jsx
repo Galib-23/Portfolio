@@ -3,6 +3,7 @@ import {
 } from "react-router-dom";
 import Home from "../Pages/Home/Home/Home";
 import Dashboard from "../Pages/DashboardPages/Dashboard";
+import ClickDashboard from "../Pages/DashboardPages/ClickDashboard";
 
 const router = createBrowserRouter([
     {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
     {
       path: "/galib/dashboard-stats",
       element: <Dashboard />
+    },
+    {
+      path: "/galib/click-users",
+      element: <ClickDashboard />
     }
 ]);
 export default router;

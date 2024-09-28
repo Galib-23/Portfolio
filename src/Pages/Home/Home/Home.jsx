@@ -27,7 +27,7 @@ const Home = () => {
     const oneHour = 60 * 60 * 1000;
 
     if (!visitData || Date.now() - visitData.timestamp > oneHour) {
-      await fetch("http://localhost:5000/api/visitor", {
+      await fetch("https://p-server-mu.vercel.app/api/visitor", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
