@@ -63,38 +63,50 @@ const Projects = () => {
         </h2>
         <p className="text-center font-semibold text-white mb-20">
           I have developed a series of dynamic web applications leveraging the
-          Different stacks, showcasing <br /> my proficiency in in modern web development technologies & practices.
+          Different stacks, showcasing <br /> my proficiency in in modern web
+          development technologies & practices.
         </p>
       </div>
-      
-      <div className="flex flex-col items-center mt-36 mb-10 mx-4 md:mx-0">
+
+      <div className="flex flex-col items-center mt-12 mb-10 mx-4 md:mx-0">
         <h2 className="pb-2 text-2xl font-semibold text-cyan-400 cursor-text">
           FULLSTACK PROJECTS
         </h2>
-        <p className="text-white text-lg flex gap-2 items-center">Frontend Focused
-        <CiMonitor />
+        <p className="text-white text-lg flex gap-2 items-center">
+          Frontend Focused
+          <CiMonitor />
         </p>
       </div>
-      <div className="flex gap-16 justify-center flex-col md:flex-row mb-28">
+      <div className="flex gap-16 justify-center flex-col md:flex-row mb-28 mx-4 md:mx-0">
         <div className="flex flex-col items-center">
-          <div
-            className="md:w-80 mx-3 md:mx-0 h-96 border border-cyan-500 relative overflow-hidden rounded-xl"
-            data-aos="fade-up"
-            style={{ overflow: "hidden" }}
-            onMouseEnter={handleMouseEnter(containerRef1)}
-            onMouseLeave={handleMouseLeave(containerRef1)}
-            onClick={handleResetScroll(containerRef1)}
-            ref={containerRef1}
-          >
-            <img
-              src={contestopia}
-              alt="Scrollable Image 1"
-              className="w-full h-auto"
-              style={{ transition: "transform 0.3s ease-in-out" }}
-            />
+          <div className="group relative transition">
+            <div className="absolute bg-gradient-to-b from-slate-800 to-transparent top-0 w-full px-2 pb-6 pt-2 z-40 transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 rounded-t-xl">
+              <h2 className="text-xl font-semibold text-cyan-300">
+                Contestopia
+              </h2>
+              <p className="text-cyan-300 text-sm">
+                Online Contest management platform
+              </p>
+            </div>
+            <div
+              className="md:w-80 mx-3 md:mx-0 h-96 border border-cyan-500 relative overflow-hidden rounded-xl"
+              data-aos="fade-up"
+              style={{ overflow: "hidden" }}
+              onMouseEnter={handleMouseEnter(containerRef1)}
+              onMouseLeave={handleMouseLeave(containerRef1)}
+              onClick={handleResetScroll(containerRef1)}
+              ref={containerRef1}
+            >
+              <img
+                src={contestopia}
+                alt="Scrollable Image 1"
+                className="w-full h-auto"
+                style={{ transition: "transform 0.3s ease-in-out" }}
+              />
+            </div>
           </div>
           <div
-            className="flex gap-2 mx-2 md:mx-0"
+            className="flex flex-wrap justify-center gap-2 mt-4"
             data-aos="fade-up"
             data-aos-duration="3000"
           >
@@ -103,7 +115,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-sm text-xs btn-outline mt-7 text-yellow-400">
+              <button className="btn btn-sm text-xs btn-outline text-yellow-400">
                 LIVE LINK <FaLink></FaLink>
               </button>
             </a>
@@ -112,7 +124,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-sm text-xs btn-outline mt-7 text-red-800">
+              <button className="btn btn-sm text-xs btn-outline text-red-800">
                 FRONTEND <FaGithub></FaGithub>
               </button>
             </a>
@@ -121,7 +133,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-sm text-xs btn-outline mt-7 text-cyan-500">
+              <button className="btn btn-sm text-xs btn-outline text-cyan-500">
                 BACKEND <FaGithub></FaGithub>
               </button>
             </a>
@@ -129,24 +141,34 @@ const Projects = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <div
-            className="md:w-80 mx-3 md:mx-0 h-96 border border-cyan-500 relative overflow-hidden rounded-xl"
-            data-aos="fade-up"
-            style={{ overflow: "hidden" }}
-            onMouseEnter={handleMouseEnter(containerRef2)}
-            onMouseLeave={handleMouseLeave(containerRef2)}
-            onClick={handleResetScroll(containerRef2)}
-            ref={containerRef2}
-          >
-            <img
-              src={flavor}
-              alt="Scrollable Image 2"
-              className="w-full h-auto"
-              style={{ transition: "transform 0.3s ease-in-out" }}
-            />
+          <div className="group relative transition">
+            <div className="absolute bg-gradient-to-b from-slate-800 to-transparent top-0 w-full px-2 pb-6 pt-2 z-40 transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 rounded-t-xl">
+              <h2 className="text-xl font-semibold text-cyan-300">
+                Flavor Fusion
+              </h2>
+              <p className="text-cyan-300 text-sm">
+                Multivendor food delivery platform
+              </p>
+            </div>
+            <div
+              className="md:w-80 mx-3 md:mx-0 h-96 border border-cyan-500 relative overflow-hidden rounded-xl"
+              data-aos="fade-up"
+              style={{ overflow: "hidden" }}
+              onMouseEnter={handleMouseEnter(containerRef2)}
+              onMouseLeave={handleMouseLeave(containerRef2)}
+              onClick={handleResetScroll(containerRef2)}
+              ref={containerRef2}
+            >
+              <img
+                src={flavor}
+                alt="Scrollable Image 2"
+                className="w-full h-auto"
+                style={{ transition: "transform 0.3s ease-in-out" }}
+              />
+            </div>
           </div>
           <div
-            className="flex gap-2 mx-2 md:mx-0"
+            className="flex flex-wrap justify-center gap-2 mt-4"
             data-aos="fade-up"
             data-aos-duration="3000"
           >
@@ -155,7 +177,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-sm text-xs btn-outline mt-7 text-yellow-400">
+              <button className="btn btn-sm text-xs btn-outline text-yellow-400">
                 LIVE LINK <FaLink></FaLink>
               </button>
             </a>
@@ -164,7 +186,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-sm text-xs btn-outline mt-7 text-red-800">
+              <button className="btn btn-sm text-xs btn-outline text-red-800">
                 FRONTEND <FaGithub></FaGithub>
               </button>
             </a>
@@ -173,7 +195,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-sm text-xs btn-outline mt-7 text-cyan-500">
+              <button className="btn btn-sm text-xs btn-outline text-cyan-500">
                 BACKEND <FaGithub></FaGithub>
               </button>
             </a>
@@ -181,29 +203,38 @@ const Projects = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <div
-            className="md:w-80 mx-3 md:mx-0 h-96 border border-cyan-500 relative overflow-hidden rounded-xl"
-            data-aos="fade-up"
-            style={{ overflow: "hidden" }}
-            onMouseEnter={handleMouseEnter(containerRef3)}
-            onMouseLeave={handleMouseLeave(containerRef3)}
-            onClick={handleResetScroll(containerRef3)}
-            ref={containerRef3}
-          >
-            <img
-              src={nanonest}
-              alt="Scrollable Image 3"
-              className="w-full h-auto"
-              style={{ transition: "transform 0.3s ease-in-out" }}
-            />
+          <div className="group relative transition">
+            <div className="absolute bg-gradient-to-b from-slate-800 to-transparent top-0 w-full px-2 pb-6 pt-2 z-40 transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 rounded-t-xl">
+              <h2 className="text-xl font-semibold text-cyan-300">Nano Nest</h2>
+              <p className="text-cyan-300 text-sm">Multivendor Gadget shop</p>
+            </div>
+            <div
+              className="md:w-80 mx-3 md:mx-0 h-96 border border-cyan-500 relative overflow-hidden rounded-xl"
+              data-aos="fade-up"
+              style={{ overflow: "hidden" }}
+              onMouseEnter={handleMouseEnter(containerRef3)}
+              onMouseLeave={handleMouseLeave(containerRef3)}
+              onClick={handleResetScroll(containerRef3)}
+              ref={containerRef3}
+            >
+              <img
+                src={nanonest}
+                alt="Scrollable Image 3"
+                className="w-full h-auto"
+                style={{ transition: "transform 0.3s ease-in-out" }}
+              />
+            </div>
           </div>
-          <div className="flex gap-2 mx-2 md:mx-0" data-aos="fade-up">
+          <div
+            className="flex flex-wrap justify-center gap-2 mt-4"
+            data-aos="fade-up"
+          >
             <a
               href="https://nano-nest-abad6.web.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-sm text-xs btn-outline mt-7 text-yellow-400">
+              <button className="btn btn-sm text-xs btn-outline text-yellow-400">
                 LIVE LINK <FaLink></FaLink>
               </button>
             </a>
@@ -212,7 +243,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-sm text-xs btn-outline mt-7 text-red-800">
+              <button className="btn btn-sm text-xs btn-outline text-red-800">
                 FRONTEND <FaGithub></FaGithub>
               </button>
             </a>
@@ -221,14 +252,14 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-sm text-xs btn-outline mt-7 text-cyan-500">
+              <button className="btn btn-sm text-xs btn-outline text-cyan-500">
                 BACKEND <FaGithub></FaGithub>
               </button>
             </a>
           </div>
         </div>
       </div>
-    </div> 
+    </div>
   );
 };
 

@@ -1,0 +1,21 @@
+/* Style for all thumbnails */
+.carousel .thumb {
+  width: 100px; /* Set width for each thumbnail */
+  height: 50px; /* Set height for each thumbnail */
+  border: 2px solid #ccc; /* Border for unselected thumbnails */
+  opacity: 0.7; /* Unselected thumbnail opacity */
+  object-fit: cover; /* Ensure images fit well within the fixed dimensions */
+}
+
+/* Style for the selected thumbnail */
+.carousel .thumb.selected {
+  border: 2px solid #3498db; /* Border for the selected thumbnail */
+  opacity: 1; /* Fully opaque for the selected thumbnail */
+}
+
+/* Optional: Center the thumbnail content if necessary */
+.carousel .thumb img {
+  width: 100%; /* Ensure the image fills the thumbnail */
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the thumbnail area */
+}

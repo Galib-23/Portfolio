@@ -18,26 +18,26 @@ const Timeline = () => {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                        date="2021 - Present"
+                        date="2022 - Present"
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                         icon={<FaUniversity />}
                     >
-                        <h3 className="vertical-timeline-element-title">Studying Engineering</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Rajshahi, Bangladesh</h4>
+                        <h3 className="vertical-timeline-element-title">Pursuing Bsc. on Electrical and Computer Engineering</h3>
+                        <h4 className="vertical-timeline-element-subtitle font-normal text-sm">Rajshahi University Of Engineering & Technology</h4>
                         <p>
-                            Rajshahi University Of Engineering & Technology
+                            Rajshahi, Bangladesh
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work text-white"
-                        date="2022 - Present"
+                        date="2022 - 2023"
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                         icon={<FaSuitcase/>}
                     >
                         <h3 className="vertical-timeline-element-title text-black">Teacher</h3>
-                        <h4 className="vertical-timeline-element-subtitle text-black">MOJARU</h4>
-                        <p className='text-black'>
-                            Teaching Math in an online based coaching center named Mojaru.
+                        <h4 className="vertical-timeline-element-subtitle text-black text-sm font-normal">MOJARU</h4>
+                        <p className='text-black font-normal text-xs'>
+                            Teaching Math in an online based coaching center, Mojaru.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -46,7 +46,7 @@ const Timeline = () => {
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                         icon={<FaSchool />}
                     >
-                        <h3 className="vertical-timeline-element-title text-black">Passed Out HSC</h3>
+                        <h3 className="vertical-timeline-element-title text-black">Passed HSC</h3>
                         <h4 className="vertical-timeline-element-subtitle text-black">Rajshahi Cadet College</h4>
                         <p className='text-black'>
                             Result: GPA 5.00

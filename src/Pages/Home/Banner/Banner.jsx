@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import banner from "../../../assets/banner1.jpg";
 import profile from "../../../assets/edit3.jpeg";
 import { motion } from "framer-motion";
-import { IoBookOutline, IoEye } from "react-icons/io5";
-import Tilt from "react-parallax-tilt";
+import { IoBookOutline, IoEye, IoWarning } from "react-icons/io5";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Swal from "sweetalert2";
 import lurking from "../../../assets/lurking.jpg";
+
 
 const Banner = () => {
   useEffect(() => {
@@ -170,6 +170,22 @@ const Banner = () => {
       });
   };
 
+  const handleWarningClick = () => {
+    trackVisitor();
+    Swal.fire({
+      title: "😒",
+      html: `
+      <h3style="font-size: 18px; font-weight: bold;">I knew you would click😼</h3>
+      <br />
+      <h3style="font-size: 17px; font-weight: bold; margin-top: 4px">Now I will tell this to your mom😾</h3>
+      <p style="font-size: 16px; margin-top: 4px">But if you subscribe to my youtube channel I won't tell.</p>
+    `,
+      icon: "warning",
+      showConfirmButton: false,
+      footer: '<a href="https://youtu.be/t-jz8WLSxSc?si=m7Fc6GGt99U-QLxK" style="font-size: 16px; text-decoration: underline; color: blue;">Subscribe Channel</a>'
+    });
+  }
+
   return (
     <div
       className="hero min-h-screen"
@@ -220,16 +236,23 @@ const Banner = () => {
                   <IoBookOutline className="text-xl" />
                 </button>
               </a>
+              <button onClick={handleWarningClick} className="btn text-black hover:text-white bg-slate-500 border-none">
+                  Don&apos;t click here
+                  <IoWarning className="text-xl" />
+                </button>
             </div>
           </div>
           <div data-aos="flip-right">
-            <div
-              className="mt-16 w-48 md:w-72 p-2 mb-6 md:mb-0 md:mt-0 rounded-3xl border-y-8 border-cyan-600 tooltip"
-              data-tip="Hey! Watcha doin' ?"
-            >
-              <Tilt>
-                <img className="w-full rounded-3xl" src={profile} />
-              </Tilt>
+            <div className="mt-16 w-48 md:w-72 p-2 mb-6 md:mb-0 md:mt-0 rounded-3xl border-y-8 border-cyan-600 group relative transition">
+              <div className="absolute bg-gradient-to-b from-slate-800 to-transparent top-0 w-full px-2 pb-6 pt-2 z-40 transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 rounded-t-xl">
+                <h2 className="text-xl font-semibold text-cyan-300">
+                  Hello!
+                </h2>
+                <p className="text-cyan-300 text-sm">Welcome to my portfolio.</p>
+                <p className="text-cyan-300 text-sm">Is 2 + 2 = 5 ?</p>
+              </div>
+
+              <img className="w-full rounded-3xl" src={profile} />
             </div>
           </div>
         </div>

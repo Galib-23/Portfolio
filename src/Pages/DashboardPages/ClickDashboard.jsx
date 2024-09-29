@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const ClickDashboard = () => {
     const [data, setData] = useState({
@@ -23,8 +24,11 @@ const ClickDashboard = () => {
     }, []);
 
     return (
-        <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
-            <h2 className="text-2xl font-bold mb-4 text-gray-700">Click User Statistics</h2>
+        <div className="max-w-4xl mx-2 md:mx-auto p-6 bg-white shadow-md rounded-lg">
+            <h2 className="text-2xl font-bold mb-4 text-gray-700 flex flex-col">Click User Statistics
+            <Link to='/galib/dashboard-stats' className="text-sm underline text-blue-600 cursor-pointer">Visitor Stats</Link>
+            <Link to='/' className="text-sm underline text-blue-600 cursor-pointer">Home</Link>
+            </h2>
             <div className="mb-6">
                 <p className="text-lg text-gray-700">
                     <span className="font-semibold">Total Clicks:</span> {data.totalClicks}

@@ -17,7 +17,7 @@ const BackendProjects = () => {
           <FaServer />
         </p>
       </div>
-      <div className="flex flex-wrap gap-10 justify-center mx-2 lg:mx-0">
+      <div className="flex flex-wrap gap-10 justify-center mx-5 md:mx-0">
         <BackendProjectsCard
           projectImage={disthumb}
           youtubeUrl="https://youtu.be/UIGgdCQgg9s?feature=shared"

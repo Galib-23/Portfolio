@@ -39,7 +39,7 @@ const BackendProjectsCard = ({
       <div className="p-3 flex flex-col gap-2">
         <p className="text-lg md:text-xl font-semibold line-clamp-2 text-white">{projectName}</p>
         <p className="text-sm line-clamp-2 text-slate-300">{description}</p>
-        <span className="italic text-xs">{technologies}</span>
+        <span className="italic text-xs mb-2">{technologies}</span>
         <button
           onClick={handleViewClick}
           className="z-10 group-hover:bottom-0 absolute bottom-[-200px] left-0 right-0 border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white transition-all duration-300 text-center py-2 rounded-md !rounded-tl-none m-2 cursor-pointer"

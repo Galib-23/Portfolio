@@ -5,6 +5,7 @@ import discordThumb from '../../../assets/disthumb.png'
 import formifyThumb from '../../../assets/formifythumb.png'
 import promptthumb from '../../../assets/promptthumb.png'
 import circlespacethumb from '../../../assets/circlespacethumb.png'
+import './Carousel.css'
 
 
 const Youtube = () => {
