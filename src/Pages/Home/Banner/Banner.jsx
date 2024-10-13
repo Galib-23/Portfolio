@@ -6,8 +6,8 @@ import { IoBookOutline, IoEye, IoWarning } from "react-icons/io5";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Swal from "sweetalert2";
-import lurking from "../../../assets/lurking.jpg";
-
+import hireme from "../../../assets/hireme.jpg";
+import notcry from "../../../assets/notcry.jpg";
 
 const Banner = () => {
   useEffect(() => {
@@ -63,40 +63,57 @@ const Banner = () => {
         if (result.isConfirmed) {
           swalWithBootstrapButtons
             .fire({
-              title: "Do you really have intention for hiring?",
-              text: "Or, you are just stalking randomly 🙄 ?",
+              text: "Are you sure you wanna hire? 🥺",
               icon: "question",
               showCancelButton: true,
-              confirmButtonText: "Yes, I wanna hire 🥰!",
+              confirmButtonText: "Yes 🥰!",
               cancelButtonText: "No 😓",
               reverseButtons: true,
             })
             .then(async (result) => {
               if (result.isConfirmed) {
-                const { value: email } = await Swal.fire({
-                  title: "Input email address",
-                  input: "email",
-                  inputLabel: "Your email address",
-                  inputPlaceholder: "Enter your email address",
-                });
-                if (email) {
-                  //
-                  Swal.fire({
-                    title: "Here's my CV",
-                    html: `
-                    <a href="https://drive.google.com/file/d/13y0E_ZFAjBXFGcAksnQmJN_FEdCqkdG5/view?usp=drive_link"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="text-decoration: underline; font-weight: 600; color: blue;">
-      link
-  </a>
-`,
-                  });
-                }
-              } else if (result.dismiss === Swal.DismissReason.cancel) {
                 Swal.fire({
-                  imageUrl: lurking,
+                  title: "Here's my CV",
+                  html: `
+                    <a 
+                      href="https://drive.google.com/file/d/13y0E_ZFAjBXFGcAksnQmJN_FEdCqkdG5/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style="text-decoration: underline; font-weight: 600; color: blue;"
+                    >
+                      Click to view CV
+                    </a>
+`,
                 });
+              } else if (result.dismiss === Swal.DismissReason.cancel) {
+                swalWithBootstrapButtons.fire({
+                  imageUrl: hireme,
+                  showCancelButton: true,
+                  confirmButtonText: "Ok! 🥰",
+                  cancelButtonText: "No! I won't hire 😞",
+                  reverseButtons: true,
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                    Swal.fire({
+                      title: "Thank you!! 🥰",
+                      text: "Here's my CV",
+                      html: `
+                        <a 
+                          href="https://drive.google.com/file/d/13y0E_ZFAjBXFGcAksnQmJN_FEdCqkdG5/view?usp=sharing"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style="text-decoration: underline; font-weight: 600; color: blue;"
+                        >
+                          Click to view CV
+                        </a>
+    `,
+                    });
+                  } else {
+                    Swal.fire({
+                      imageUrl: notcry
+                    })
+                  }
+                })
               }
             });
         } else if (result.dismiss === Swal.DismissReason.cancel) {
@@ -106,8 +123,8 @@ const Banner = () => {
               title: "Then why you need my CV 🧐?",
               icon: "question",
               showCancelButton: true,
-              confirmButtonText: "Just wanna see your skills! 🥰",
-              cancelButtonText: "To see if you're more skilled than me 😏",
+              confirmButtonText: "Want to refer you! 🥰",
+              cancelButtonText: "I am just stalking 😐",
               reverseButtons: true,
             })
             .then((result) => {
@@ -145,11 +162,11 @@ const Banner = () => {
                     Swal.fire({
                       title: "Here's my CV",
                       html: `
-                      <a href="https://drive.google.com/file/d/1XAQ6ZQheVEiPAjF6t_Jti2Uf58iPvVZK/view?usp=drive_link"
+                      <a href="https://drive.google.com/file/d/13y0E_ZFAjBXFGcAksnQmJN_FEdCqkdG5/view?usp=sharing"
        target="_blank"
        rel="noopener noreferrer"
        style="text-decoration: underline; font-weight: 600; color: blue;">
-        link
+        Click to view CV
     </a>
   `,
                     });
@@ -157,13 +174,16 @@ const Banner = () => {
                 });
               } else if (result.dismiss === Swal.DismissReason.cancel) {
                 Swal.fire({
-                  icon: "warning",
-                  title: "Oops...",
-                  text: "You are a Narcissist! 🤧",
+                  title: "Caught you red-handed! 😆",
+                  text: "No worries, I know I'm irresistible! 😜",
+                  imageUrl: 'https://media.giphy.com/media/3oz8xSjBmD1ZyELqW4/giphy.gif',
+                  imageWidth: 400,
+                  imageHeight: 200,
                   showConfirmButton: false,
                   footer:
-                    '<a  href="https://psychcentral.com/disorders/narcissistic-personality-disorder/narcissism-cure" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; font-weight: 600; color: blue;">Why do I have this issue?</a>',
+                    '<a href="https://www.wikihow.com/Stop-Stalking" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; font-weight: 600; color: blue;">Learn how to stop stalking</a>',
                 });
+                
               }
             });
         }
@@ -175,16 +195,14 @@ const Banner = () => {
     Swal.fire({
       title: "😒",
       html: `
-      <h3style="font-size: 18px; font-weight: bold;">I knew you would click😼</h3>
-      <br />
-      <h3style="font-size: 17px; font-weight: bold; margin-top: 4px">Now I will tell this to your mom😾</h3>
-      <p style="font-size: 16px; margin-top: 4px">But if you subscribe to my youtube channel I won't tell.</p>
+      <h3 style="font-size: 17px; font-weight: bold; margin-top: 4px">I knew you would click!😾</h3>
+      <p style="font-size: 16px; margin-top: 4px">Now visit my youtube channel and subscribe</p>
     `,
-      icon: "warning",
       showConfirmButton: false,
-      footer: '<a href="https://youtu.be/t-jz8WLSxSc?si=m7Fc6GGt99U-QLxK" style="font-size: 16px; text-decoration: underline; color: blue;">Subscribe Channel</a>'
+      footer:
+        '<a href="https://youtu.be/t-jz8WLSxSc?si=m7Fc6GGt99U-QLxK" style="font-size: 16px; text-decoration: underline; color: blue;">Go to Channel</a>',
     });
-  }
+  };
 
   return (
     <div
@@ -236,19 +254,22 @@ const Banner = () => {
                   <IoBookOutline className="text-xl" />
                 </button>
               </a>
-              <button onClick={handleWarningClick} className="btn text-black hover:text-white bg-slate-500 border-none">
-                  Don&apos;t click here
-                  <IoWarning className="text-xl" />
-                </button>
+              <button
+                onClick={handleWarningClick}
+                className="btn text-black hover:text-white bg-slate-500 border-none"
+              >
+                Don&apos;t click here
+                <IoWarning className="text-xl" />
+              </button>
             </div>
           </div>
           <div data-aos="flip-right">
             <div className="mt-16 w-48 md:w-72 p-2 mb-6 md:mb-0 md:mt-0 rounded-3xl border-y-8 border-cyan-600 group relative transition">
-              <div className="absolute bg-gradient-to-b from-slate-800 to-transparent top-0 w-full px-2 pb-6 pt-2 z-40 transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 rounded-t-xl">
-                <h2 className="text-xl font-semibold text-cyan-300">
-                  Hello!
-                </h2>
-                <p className="text-cyan-300 text-sm">Welcome to my portfolio.</p>
+              <div className="absolute bg-gradient-to-b from-slate-800 to-transparent top-2 right-0.5 w-full px-2 pb-6 pt-2 z-40 transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 rounded-t-2xl">
+                <h2 className="text-xl font-semibold text-cyan-300">Hello!</h2>
+                <p className="text-cyan-300 text-sm">
+                  Welcome to my portfolio.
+                </p>
                 <p className="text-cyan-300 text-sm">Is 2 + 2 = 5 ?</p>
               </div>
 
