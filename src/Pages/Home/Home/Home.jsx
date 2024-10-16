@@ -46,8 +46,8 @@ const Home = () => {
       <Navbar></Navbar>
       <Banner></Banner>
       <About></About>
-      <Projects></Projects>
       <BackendProjects />
+      <Projects></Projects>
       <Youtube />
       <CallToAction />
       <Designs></Designs>

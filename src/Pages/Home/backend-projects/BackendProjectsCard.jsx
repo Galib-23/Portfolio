@@ -1,4 +1,7 @@
 import Swal from "sweetalert2";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React from "react";
 
 const BackendProjectsCard = ({
   projectImage,
@@ -7,7 +10,12 @@ const BackendProjectsCard = ({
   gitUrl,
   technologies,
   description,
+  dataAos,
+  dataAosDirection
 }) => {
+  React.useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   const handleViewClick = () => {
     Swal.fire({
@@ -28,7 +36,7 @@ const BackendProjectsCard = ({
   }
 
   return (
-    <div className="group relative w-full border border-cyan-400 hover:border-2 min-h-[400px] overflow-hidden rounded-lg sm:w-[430px] transition-all">
+    <div data-aos={dataAos} data-aos-direction={dataAosDirection} className="group relative w-full border border-cyan-400 hover:border-2 min-h-[400px] overflow-hidden rounded-lg sm:w-[430px] transition-all">
       <div to={`/post/${"asd"}`}>
         <img
           src={projectImage}

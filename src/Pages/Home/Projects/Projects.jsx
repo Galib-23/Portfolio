@@ -57,17 +57,6 @@ const Projects = () => {
 
   return (
     <div id="projects" className="mt-20">
-      <div data-aos="fade-up" data-aos-duration="3000">
-        <h2 className="text-4xl font-extrabold text-center text-cyan-400 mb-5">
-          MY PROJECTS
-        </h2>
-        <p className="text-center font-semibold text-white mb-20">
-          I have developed a series of dynamic web applications leveraging the
-          Different stacks, showcasing <br /> my proficiency in in modern web
-          development technologies & practices.
-        </p>
-      </div>
-
       <div className="flex flex-col items-center mt-12 mb-10 mx-4 md:mx-0">
         <h2 className="pb-2 text-2xl font-semibold text-cyan-400 cursor-text">
           FULLSTACK PROJECTS
